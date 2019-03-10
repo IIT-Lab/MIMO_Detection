@@ -4,10 +4,9 @@
 没有对矩阵进行求逆的DetNet,属于在作者的基础上取消求逆的基础版本
 将全连接的方式改为单点连接的非全连接形式
 """
-import time as tm
-
 import numpy as np
 import tensorflow as tf
+import time as tm
 
 ###start here
 """
@@ -154,7 +153,7 @@ BER.append(tf.zeros([]))
 
 # The architecture of DetNet
 for i in range(1, L):
-    temp1 = tf.matmul(HH,tf.expand_dims(S[-1], 2))
+    temp1 = tf.matmul(HH, tf.expand_dims(S[-1], 2))
     temp1 = tf.squeeze(temp1, 2)
     Z = tf.concat([HY, S[-1], temp1], 1)
     S.append(sign_layer(Z, 3 * K, hl_size, 'sign' + str(i), weigth_matrix, full_connect))

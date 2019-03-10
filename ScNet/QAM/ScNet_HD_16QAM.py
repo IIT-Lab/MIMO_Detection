@@ -12,12 +12,11 @@ writen by Neev Samuel based on the paper:
 contact by neev.samuel@gmail.com
 
 """
-import tensorflow as tf
-import numpy as np
-import time as tm
-import math
 import sys
-import pickle as pkl
+
+import numpy as np
+import tensorflow as tf
+import time as tm
 
 ###start here
 
