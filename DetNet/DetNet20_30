@@ -1,0 +1,5014 @@
+D:\information\python3\python.exe F:/project/pyCharmProject/MIMO_Detection/DetNetSpawc/DetNet.py
+2017-11-11 20:38:54.302164: W C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-11 20:38:54.302898: W C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+WARNING:tensorflow:From D:\information\python3\lib\site-packages\tensorflow\python\util\tf_should_use.py:175: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+0 0.268437 26.7058 0.02923 0.45374
+100 0.264531 8.08002 0.02808 0.0896
+200 0.26233 2.93074 0.02689 0.02414
+300 0.266951 1.66768 0.02781 0.01334
+400 0.264969 0.971964 0.02892 0.00828
+500 0.268061 0.588429 0.02902 0.00575
+600 0.269987 0.42151 0.02998 0.00521
+700 0.261831 0.308891 0.0282 0.00465
+800 0.263952 0.259618 0.02804 0.00428
+900 0.26709 0.262516 0.02927 0.00528
+1000 0.263836 0.25735 0.02803 0.00531
+1100 0.268932 0.226587 0.02887 0.00485
+1200 0.263204 0.213834 0.02795 0.00463
+1300 0.267851 0.248356 0.03026 0.00543
+1400 0.265452 0.237571 0.0294 0.00549
+1500 0.273287 0.266141 0.03018 0.00598
+1600 0.265316 0.216714 0.02717 0.00507
+1700 0.259917 0.232022 0.02696 0.00507
+1800 0.264593 0.252243 0.0281 0.00543
+1900 0.265842 0.26315 0.0281 0.00596
+2000 0.260976 0.273452 0.02842 0.00563
+2100 0.267602 0.315591 0.02841 0.00691
+2200 0.274343 0.29748 0.03056 0.00684
+2300 0.266805 0.272512 0.02901 0.00594
+2400 0.270166 0.251364 0.02883 0.00573
+2500 0.270396 0.260855 0.03028 0.00591
+2600 0.263451 0.345971 0.0275 0.00722
+2700 0.269845 0.268252 0.02867 0.00617
+2800 0.265496 0.263336 0.02855 0.00593
+2900 0.266354 0.285418 0.02936 0.006
+3000 0.271448 0.259401 0.02958 0.00587
+3100 0.26564 0.268248 0.02907 0.00588
+3200 0.265664 0.27668 0.02827 0.00606
+3300 0.265627 0.258057 0.02957 0.00572
+3400 0.265918 0.337965 0.02884 0.00704
+3500 0.267061 0.29109 0.02863 0.00642
+3600 0.26839 0.302739 0.02906 0.00631
+3700 0.266448 0.259776 0.02892 0.00576
+3800 0.264935 0.251511 0.02841 0.00527
+3900 0.267054 0.276215 0.02834 0.00605
+4000 0.263955 0.241773 0.0281 0.0053
+4100 0.267307 0.27346 0.02921 0.0062
+4200 0.266338 0.338339 0.02866 0.00684
+4300 0.267796 0.259815 0.02901 0.00584
+4400 0.265412 0.279583 0.02945 0.00598
+4500 0.266068 0.262735 0.02849 0.00598
+4600 0.266075 0.279588 0.02854 0.00591
+4700 0.2661 0.261666 0.02878 0.00571
+4800 0.264071 0.28936 0.02796 0.00618
+4900 0.270357 0.318516 0.03015 0.00679
+5000 0.267686 0.278071 0.02837 0.00632
+5100 0.269375 0.296721 0.02893 0.00681
+5200 0.267951 0.374632 0.02866 0.00777
+5300 0.269856 0.296093 0.02922 0.00683
+5400 0.262329 0.283826 0.02765 0.00596
+5500 0.263537 0.257351 0.02836 0.0059
+5600 0.272423 0.285798 0.02837 0.00633
+5700 0.264854 0.251376 0.02825 0.00553
+5800 0.264112 0.25733 0.02837 0.00599
+5900 0.272045 0.279065 0.03036 0.00633
+6000 0.260612 0.254204 0.02802 0.00575
+6100 0.259827 0.268011 0.028 0.00595
+6200 0.265736 0.318983 0.02886 0.0068
+6300 0.264935 0.263867 0.02872 0.00618
+6400 0.267817 0.385071 0.02861 0.00773
+6500 0.262008 0.2501 0.02783 0.00552
+6600 0.267572 0.34438 0.02963 0.0076
+6700 0.268693 0.322057 0.02949 0.00713
+6800 0.2685 0.278944 0.02947 0.00622
+6900 0.264776 0.338081 0.02776 0.00696
+7000 0.261821 0.332033 0.02806 0.0074
+7100 0.269651 0.297698 0.0294 0.00734
+7200 0.268584 0.259367 0.0292 0.00596
+7300 0.262096 0.255238 0.02819 0.00535
+7400 0.27105 0.240022 0.02958 0.00572
+7500 0.265477 0.314472 0.02852 0.00666
+7600 0.270795 0.27728 0.02926 0.00647
+7700 0.263052 0.288823 0.02929 0.00654
+7800 0.263357 0.269047 0.02834 0.0061
+7900 0.259929 0.264429 0.02789 0.00592
+8000 0.268154 0.285255 0.0288 0.0065
+8100 0.267616 0.341474 0.02891 0.00703
+8200 0.26899 0.27166 0.02992 0.00633
+8300 0.266361 0.285267 0.02813 0.00644
+8400 0.269975 0.274844 0.02891 0.00632
+8500 0.260353 0.256756 0.02832 0.0057
+8600 0.266126 0.273704 0.02799 0.0058
+8700 0.267795 0.264937 0.02961 0.00616
+8800 0.261188 0.269586 0.02887 0.00606
+8900 0.268748 0.28209 0.02907 0.00647
+9000 0.265125 0.262252 0.02883 0.00583
+9100 0.267099 0.272298 0.02814 0.00572
+9200 0.270614 0.249043 0.02854 0.00564
+9300 0.26562 0.280461 0.02937 0.00613
+9400 0.270507 0.22791 0.0291 0.00552
+9500 0.269031 0.287975 0.02925 0.00649
+9600 0.268649 0.265824 0.02942 0.00608
+9700 0.269642 0.27249 0.02876 0.00623
+9800 0.269831 0.252824 0.02809 0.00572
+9900 0.265271 0.246229 0.02848 0.00565
+10000 0.264147 0.292207 0.02836 0.00626
+10100 0.26562 0.279989 0.02888 0.00624
+10200 0.264192 0.262772 0.02913 0.00607
+10300 0.265438 0.270917 0.02904 0.00629
+10400 0.27063 0.273912 0.0299 0.00611
+10500 0.261733 0.285523 0.02791 0.00626
+10600 0.267029 0.28897 0.02901 0.00675
+10700 0.267948 0.256378 0.02875 0.0062
+10800 0.267362 0.272093 0.02817 0.00603
+10900 0.269636 0.280176 0.02862 0.00637
+11000 0.263959 0.282968 0.02828 0.00605
+11100 0.268068 0.313615 0.02882 0.00687
+11200 0.270455 0.256672 0.02921 0.00606
+11300 0.265005 0.275162 0.02816 0.00614
+11400 0.264292 0.267156 0.02818 0.006
+11500 0.267206 0.279643 0.02977 0.0063
+11600 0.265319 0.285301 0.02855 0.00653
+11700 0.270254 0.301097 0.02958 0.00713
+11800 0.265381 0.277926 0.02906 0.00633
+11900 0.265249 0.279348 0.02876 0.00614
+12000 0.271625 0.300742 0.02962 0.00709
+12100 0.267371 0.277436 0.02858 0.00637
+12200 0.26546 0.245574 0.02764 0.00558
+12300 0.264224 0.246317 0.02828 0.00559
+12400 0.273563 0.300064 0.03008 0.00652
+12500 0.266694 0.280665 0.02841 0.00625
+12600 0.268369 0.311516 0.02954 0.00704
+12700 0.260613 0.242564 0.02711 0.00553
+12800 0.265756 0.256606 0.02811 0.00581
+12900 0.265719 0.255909 0.02786 0.00595
+13000 0.268028 0.287662 0.02883 0.00638
+13100 0.264413 0.272779 0.02731 0.006
+13200 0.271932 0.295285 0.02942 0.00673
+13300 0.266076 0.289326 0.02895 0.0066
+13400 0.261838 0.265046 0.02758 0.00601
+13500 0.268809 0.2753 0.02901 0.00591
+13600 0.266348 0.275328 0.02846 0.00634
+13700 0.26976 0.256179 0.02982 0.00629
+13800 0.268165 0.238913 0.02907 0.00551
+13900 0.266739 0.259744 0.02857 0.00617
+14000 0.265242 0.265051 0.02842 0.00609
+14100 0.269573 0.260088 0.02994 0.00591
+14200 0.264482 0.268436 0.02901 0.00641
+14300 0.266307 0.291371 0.02943 0.00662
+14400 0.266646 0.254825 0.02944 0.00587
+14500 0.266869 0.265 0.02857 0.00582
+14600 0.267108 0.253003 0.0292 0.00612
+14700 0.274378 0.257894 0.03015 0.00593
+14800 0.266557 0.296477 0.0291 0.00667
+14900 0.261596 0.277936 0.02795 0.00642
+15000 0.265788 0.250668 0.02829 0.00575
+15100 0.261454 0.236718 0.02751 0.00547
+15200 0.263552 0.246337 0.02797 0.0056
+15300 0.266306 0.249097 0.02911 0.00574
+15400 0.271549 0.273838 0.02953 0.0061
+15500 0.267419 0.266335 0.02936 0.00643
+15600 0.265 0.236218 0.02823 0.00513
+15700 0.26096 0.273842 0.02708 0.00617
+15800 0.25993 0.286218 0.02786 0.00643
+15900 0.265701 0.251832 0.02968 0.00583
+16000 0.264621 0.285594 0.02775 0.00652
+16100 0.267789 0.287406 0.02887 0.0067
+16200 0.269708 0.267894 0.02845 0.00631
+16300 0.264944 0.274992 0.02873 0.00604
+16400 0.264729 0.26942 0.02864 0.00599
+16500 0.264326 0.252278 0.02895 0.00586
+16600 0.270093 0.294346 0.03012 0.00693
+16700 0.268352 0.270999 0.0283 0.00606
+16800 0.264907 0.274509 0.02825 0.00617
+16900 0.263795 0.26649 0.02905 0.00621
+17000 0.269069 0.23482 0.02891 0.00581
+17100 0.265037 0.260993 0.02864 0.00649
+17200 0.263079 0.248925 0.02862 0.00593
+17300 0.266189 0.244401 0.02915 0.00608
+17400 0.26471 0.263017 0.0291 0.00624
+17500 0.26712 0.229165 0.02859 0.00547
+17600 0.265321 0.245921 0.02831 0.00592
+17700 0.264774 0.261316 0.02742 0.00596
+17800 0.269162 0.25904 0.0286 0.00619
+17900 0.269022 0.252591 0.02852 0.0061
+18000 0.268792 0.223336 0.02936 0.00586
+18100 0.267631 0.232853 0.02875 0.00597
+18200 0.262657 0.24856 0.02779 0.00591
+18300 0.264286 0.227183 0.02747 0.00543
+18400 0.269425 0.273195 0.02886 0.00667
+18500 0.264005 0.251122 0.02808 0.00612
+18600 0.263001 0.207169 0.02765 0.00555
+18700 0.265458 0.219992 0.02807 0.00532
+18800 0.262967 0.239593 0.02792 0.0058
+18900 0.267923 0.276485 0.02872 0.00651
+19000 0.264288 0.218365 0.02809 0.00535
+19100 0.266652 0.254145 0.02859 0.00621
+19200 0.263248 0.205709 0.0286 0.00513
+19300 0.264656 0.264004 0.028 0.00634
+19400 0.266288 0.274399 0.02785 0.00666
+19500 0.266409 0.250298 0.02809 0.00603
+19600 0.265679 0.23603 0.02876 0.00588
+19700 0.264853 0.230447 0.02923 0.00607
+19800 0.27057 0.245013 0.02973 0.00598
+19900 0.264183 0.237622 0.02817 0.00579
+snr:
+8.0
+test iteration:
+0
+snr:
+8.0
+test iteration:
+1
+snr:
+8.0
+test iteration:
+2
+snr:
+8.0
+test iteration:
+3
+snr:
+8.0
+test iteration:
+4
+snr:
+8.0
+test iteration:
+5
+snr:
+8.0
+test iteration:
+6
+snr:
+8.0
+test iteration:
+7
+snr:
+8.0
+test iteration:
+8
+snr:
+8.0
+test iteration:
+9
+snr:
+8.0
+test iteration:
+10
+snr:
+8.0
+test iteration:
+11
+snr:
+8.0
+test iteration:
+12
+snr:
+8.0
+test iteration:
+13
+snr:
+8.0
+test iteration:
+14
+snr:
+8.0
+test iteration:
+15
+snr:
+8.0
+test iteration:
+16
+snr:
+8.0
+test iteration:
+17
+snr:
+8.0
+test iteration:
+18
+snr:
+8.0
+test iteration:
+19
+snr:
+8.0
+test iteration:
+20
+snr:
+8.0
+test iteration:
+21
+snr:
+8.0
+test iteration:
+22
+snr:
+8.0
+test iteration:
+23
+snr:
+8.0
+test iteration:
+24
+snr:
+8.0
+test iteration:
+25
+snr:
+8.0
+test iteration:
+26
+snr:
+8.0
+test iteration:
+27
+snr:
+8.0
+test iteration:
+28
+snr:
+8.0
+test iteration:
+29
+snr:
+8.0
+test iteration:
+30
+snr:
+8.0
+test iteration:
+31
+snr:
+8.0
+test iteration:
+32
+snr:
+8.0
+test iteration:
+33
+snr:
+8.0
+test iteration:
+34
+snr:
+8.0
+test iteration:
+35
+snr:
+8.0
+test iteration:
+36
+snr:
+8.0
+test iteration:
+37
+snr:
+8.0
+test iteration:
+38
+snr:
+8.0
+test iteration:
+39
+snr:
+8.0
+test iteration:
+40
+snr:
+8.0
+test iteration:
+41
+snr:
+8.0
+test iteration:
+42
+snr:
+8.0
+test iteration:
+43
+snr:
+8.0
+test iteration:
+44
+snr:
+8.0
+test iteration:
+45
+snr:
+8.0
+test iteration:
+46
+snr:
+8.0
+test iteration:
+47
+snr:
+8.0
+test iteration:
+48
+snr:
+8.0
+test iteration:
+49
+snr:
+8.0
+test iteration:
+50
+snr:
+8.0
+test iteration:
+51
+snr:
+8.0
+test iteration:
+52
+snr:
+8.0
+test iteration:
+53
+snr:
+8.0
+test iteration:
+54
+snr:
+8.0
+test iteration:
+55
+snr:
+8.0
+test iteration:
+56
+snr:
+8.0
+test iteration:
+57
+snr:
+8.0
+test iteration:
+58
+snr:
+8.0
+test iteration:
+59
+snr:
+8.0
+test iteration:
+60
+snr:
+8.0
+test iteration:
+61
+snr:
+8.0
+test iteration:
+62
+snr:
+8.0
+test iteration:
+63
+snr:
+8.0
+test iteration:
+64
+snr:
+8.0
+test iteration:
+65
+snr:
+8.0
+test iteration:
+66
+snr:
+8.0
+test iteration:
+67
+snr:
+8.0
+test iteration:
+68
+snr:
+8.0
+test iteration:
+69
+snr:
+8.0
+test iteration:
+70
+snr:
+8.0
+test iteration:
+71
+snr:
+8.0
+test iteration:
+72
+snr:
+8.0
+test iteration:
+73
+snr:
+8.0
+test iteration:
+74
+snr:
+8.0
+test iteration:
+75
+snr:
+8.0
+test iteration:
+76
+snr:
+8.0
+test iteration:
+77
+snr:
+8.0
+test iteration:
+78
+snr:
+8.0
+test iteration:
+79
+snr:
+8.0
+test iteration:
+80
+snr:
+8.0
+test iteration:
+81
+snr:
+8.0
+test iteration:
+82
+snr:
+8.0
+test iteration:
+83
+snr:
+8.0
+test iteration:
+84
+snr:
+8.0
+test iteration:
+85
+snr:
+8.0
+test iteration:
+86
+snr:
+8.0
+test iteration:
+87
+snr:
+8.0
+test iteration:
+88
+snr:
+8.0
+test iteration:
+89
+snr:
+8.0
+test iteration:
+90
+snr:
+8.0
+test iteration:
+91
+snr:
+8.0
+test iteration:
+92
+snr:
+8.0
+test iteration:
+93
+snr:
+8.0
+test iteration:
+94
+snr:
+8.0
+test iteration:
+95
+snr:
+8.0
+test iteration:
+96
+snr:
+8.0
+test iteration:
+97
+snr:
+8.0
+test iteration:
+98
+snr:
+8.0
+test iteration:
+99
+snr:
+8.0
+test iteration:
+100
+snr:
+8.0
+test iteration:
+101
+snr:
+8.0
+test iteration:
+102
+snr:
+8.0
+test iteration:
+103
+snr:
+8.0
+test iteration:
+104
+snr:
+8.0
+test iteration:
+105
+snr:
+8.0
+test iteration:
+106
+snr:
+8.0
+test iteration:
+107
+snr:
+8.0
+test iteration:
+108
+snr:
+8.0
+test iteration:
+109
+snr:
+8.0
+test iteration:
+110
+snr:
+8.0
+test iteration:
+111
+snr:
+8.0
+test iteration:
+112
+snr:
+8.0
+test iteration:
+113
+snr:
+8.0
+test iteration:
+114
+snr:
+8.0
+test iteration:
+115
+snr:
+8.0
+test iteration:
+116
+snr:
+8.0
+test iteration:
+117
+snr:
+8.0
+test iteration:
+118
+snr:
+8.0
+test iteration:
+119
+snr:
+8.0
+test iteration:
+120
+snr:
+8.0
+test iteration:
+121
+snr:
+8.0
+test iteration:
+122
+snr:
+8.0
+test iteration:
+123
+snr:
+8.0
+test iteration:
+124
+snr:
+8.0
+test iteration:
+125
+snr:
+8.0
+test iteration:
+126
+snr:
+8.0
+test iteration:
+127
+snr:
+8.0
+test iteration:
+128
+snr:
+8.0
+test iteration:
+129
+snr:
+8.0
+test iteration:
+130
+snr:
+8.0
+test iteration:
+131
+snr:
+8.0
+test iteration:
+132
+snr:
+8.0
+test iteration:
+133
+snr:
+8.0
+test iteration:
+134
+snr:
+8.0
+test iteration:
+135
+snr:
+8.0
+test iteration:
+136
+snr:
+8.0
+test iteration:
+137
+snr:
+8.0
+test iteration:
+138
+snr:
+8.0
+test iteration:
+139
+snr:
+8.0
+test iteration:
+140
+snr:
+8.0
+test iteration:
+141
+snr:
+8.0
+test iteration:
+142
+snr:
+8.0
+test iteration:
+143
+snr:
+8.0
+test iteration:
+144
+snr:
+8.0
+test iteration:
+145
+snr:
+8.0
+test iteration:
+146
+snr:
+8.0
+test iteration:
+147
+snr:
+8.0
+test iteration:
+148
+snr:
+8.0
+test iteration:
+149
+snr:
+8.0
+test iteration:
+150
+snr:
+8.0
+test iteration:
+151
+snr:
+8.0
+test iteration:
+152
+snr:
+8.0
+test iteration:
+153
+snr:
+8.0
+test iteration:
+154
+snr:
+8.0
+test iteration:
+155
+snr:
+8.0
+test iteration:
+156
+snr:
+8.0
+test iteration:
+157
+snr:
+8.0
+test iteration:
+158
+snr:
+8.0
+test iteration:
+159
+snr:
+8.0
+test iteration:
+160
+snr:
+8.0
+test iteration:
+161
+snr:
+8.0
+test iteration:
+162
+snr:
+8.0
+test iteration:
+163
+snr:
+8.0
+test iteration:
+164
+snr:
+8.0
+test iteration:
+165
+snr:
+8.0
+test iteration:
+166
+snr:
+8.0
+test iteration:
+167
+snr:
+8.0
+test iteration:
+168
+snr:
+8.0
+test iteration:
+169
+snr:
+8.0
+test iteration:
+170
+snr:
+8.0
+test iteration:
+171
+snr:
+8.0
+test iteration:
+172
+snr:
+8.0
+test iteration:
+173
+snr:
+8.0
+test iteration:
+174
+snr:
+8.0
+test iteration:
+175
+snr:
+8.0
+test iteration:
+176
+snr:
+8.0
+test iteration:
+177
+snr:
+8.0
+test iteration:
+178
+snr:
+8.0
+test iteration:
+179
+snr:
+8.0
+test iteration:
+180
+snr:
+8.0
+test iteration:
+181
+snr:
+8.0
+test iteration:
+182
+snr:
+8.0
+test iteration:
+183
+snr:
+8.0
+test iteration:
+184
+snr:
+8.0
+test iteration:
+185
+snr:
+8.0
+test iteration:
+186
+snr:
+8.0
+test iteration:
+187
+snr:
+8.0
+test iteration:
+188
+snr:
+8.0
+test iteration:
+189
+snr:
+8.0
+test iteration:
+190
+snr:
+8.0
+test iteration:
+191
+snr:
+8.0
+test iteration:
+192
+snr:
+8.0
+test iteration:
+193
+snr:
+8.0
+test iteration:
+194
+snr:
+8.0
+test iteration:
+195
+snr:
+8.0
+test iteration:
+196
+snr:
+8.0
+test iteration:
+197
+snr:
+8.0
+test iteration:
+198
+snr:
+8.0
+test iteration:
+199
+snr:
+9.0
+test iteration:
+0
+snr:
+9.0
+test iteration:
+1
+snr:
+9.0
+test iteration:
+2
+snr:
+9.0
+test iteration:
+3
+snr:
+9.0
+test iteration:
+4
+snr:
+9.0
+test iteration:
+5
+snr:
+9.0
+test iteration:
+6
+snr:
+9.0
+test iteration:
+7
+snr:
+9.0
+test iteration:
+8
+snr:
+9.0
+test iteration:
+9
+snr:
+9.0
+test iteration:
+10
+snr:
+9.0
+test iteration:
+11
+snr:
+9.0
+test iteration:
+12
+snr:
+9.0
+test iteration:
+13
+snr:
+9.0
+test iteration:
+14
+snr:
+9.0
+test iteration:
+15
+snr:
+9.0
+test iteration:
+16
+snr:
+9.0
+test iteration:
+17
+snr:
+9.0
+test iteration:
+18
+snr:
+9.0
+test iteration:
+19
+snr:
+9.0
+test iteration:
+20
+snr:
+9.0
+test iteration:
+21
+snr:
+9.0
+test iteration:
+22
+snr:
+9.0
+test iteration:
+23
+snr:
+9.0
+test iteration:
+24
+snr:
+9.0
+test iteration:
+25
+snr:
+9.0
+test iteration:
+26
+snr:
+9.0
+test iteration:
+27
+snr:
+9.0
+test iteration:
+28
+snr:
+9.0
+test iteration:
+29
+snr:
+9.0
+test iteration:
+30
+snr:
+9.0
+test iteration:
+31
+snr:
+9.0
+test iteration:
+32
+snr:
+9.0
+test iteration:
+33
+snr:
+9.0
+test iteration:
+34
+snr:
+9.0
+test iteration:
+35
+snr:
+9.0
+test iteration:
+36
+snr:
+9.0
+test iteration:
+37
+snr:
+9.0
+test iteration:
+38
+snr:
+9.0
+test iteration:
+39
+snr:
+9.0
+test iteration:
+40
+snr:
+9.0
+test iteration:
+41
+snr:
+9.0
+test iteration:
+42
+snr:
+9.0
+test iteration:
+43
+snr:
+9.0
+test iteration:
+44
+snr:
+9.0
+test iteration:
+45
+snr:
+9.0
+test iteration:
+46
+snr:
+9.0
+test iteration:
+47
+snr:
+9.0
+test iteration:
+48
+snr:
+9.0
+test iteration:
+49
+snr:
+9.0
+test iteration:
+50
+snr:
+9.0
+test iteration:
+51
+snr:
+9.0
+test iteration:
+52
+snr:
+9.0
+test iteration:
+53
+snr:
+9.0
+test iteration:
+54
+snr:
+9.0
+test iteration:
+55
+snr:
+9.0
+test iteration:
+56
+snr:
+9.0
+test iteration:
+57
+snr:
+9.0
+test iteration:
+58
+snr:
+9.0
+test iteration:
+59
+snr:
+9.0
+test iteration:
+60
+snr:
+9.0
+test iteration:
+61
+snr:
+9.0
+test iteration:
+62
+snr:
+9.0
+test iteration:
+63
+snr:
+9.0
+test iteration:
+64
+snr:
+9.0
+test iteration:
+65
+snr:
+9.0
+test iteration:
+66
+snr:
+9.0
+test iteration:
+67
+snr:
+9.0
+test iteration:
+68
+snr:
+9.0
+test iteration:
+69
+snr:
+9.0
+test iteration:
+70
+snr:
+9.0
+test iteration:
+71
+snr:
+9.0
+test iteration:
+72
+snr:
+9.0
+test iteration:
+73
+snr:
+9.0
+test iteration:
+74
+snr:
+9.0
+test iteration:
+75
+snr:
+9.0
+test iteration:
+76
+snr:
+9.0
+test iteration:
+77
+snr:
+9.0
+test iteration:
+78
+snr:
+9.0
+test iteration:
+79
+snr:
+9.0
+test iteration:
+80
+snr:
+9.0
+test iteration:
+81
+snr:
+9.0
+test iteration:
+82
+snr:
+9.0
+test iteration:
+83
+snr:
+9.0
+test iteration:
+84
+snr:
+9.0
+test iteration:
+85
+snr:
+9.0
+test iteration:
+86
+snr:
+9.0
+test iteration:
+87
+snr:
+9.0
+test iteration:
+88
+snr:
+9.0
+test iteration:
+89
+snr:
+9.0
+test iteration:
+90
+snr:
+9.0
+test iteration:
+91
+snr:
+9.0
+test iteration:
+92
+snr:
+9.0
+test iteration:
+93
+snr:
+9.0
+test iteration:
+94
+snr:
+9.0
+test iteration:
+95
+snr:
+9.0
+test iteration:
+96
+snr:
+9.0
+test iteration:
+97
+snr:
+9.0
+test iteration:
+98
+snr:
+9.0
+test iteration:
+99
+snr:
+9.0
+test iteration:
+100
+snr:
+9.0
+test iteration:
+101
+snr:
+9.0
+test iteration:
+102
+snr:
+9.0
+test iteration:
+103
+snr:
+9.0
+test iteration:
+104
+snr:
+9.0
+test iteration:
+105
+snr:
+9.0
+test iteration:
+106
+snr:
+9.0
+test iteration:
+107
+snr:
+9.0
+test iteration:
+108
+snr:
+9.0
+test iteration:
+109
+snr:
+9.0
+test iteration:
+110
+snr:
+9.0
+test iteration:
+111
+snr:
+9.0
+test iteration:
+112
+snr:
+9.0
+test iteration:
+113
+snr:
+9.0
+test iteration:
+114
+snr:
+9.0
+test iteration:
+115
+snr:
+9.0
+test iteration:
+116
+snr:
+9.0
+test iteration:
+117
+snr:
+9.0
+test iteration:
+118
+snr:
+9.0
+test iteration:
+119
+snr:
+9.0
+test iteration:
+120
+snr:
+9.0
+test iteration:
+121
+snr:
+9.0
+test iteration:
+122
+snr:
+9.0
+test iteration:
+123
+snr:
+9.0
+test iteration:
+124
+snr:
+9.0
+test iteration:
+125
+snr:
+9.0
+test iteration:
+126
+snr:
+9.0
+test iteration:
+127
+snr:
+9.0
+test iteration:
+128
+snr:
+9.0
+test iteration:
+129
+snr:
+9.0
+test iteration:
+130
+snr:
+9.0
+test iteration:
+131
+snr:
+9.0
+test iteration:
+132
+snr:
+9.0
+test iteration:
+133
+snr:
+9.0
+test iteration:
+134
+snr:
+9.0
+test iteration:
+135
+snr:
+9.0
+test iteration:
+136
+snr:
+9.0
+test iteration:
+137
+snr:
+9.0
+test iteration:
+138
+snr:
+9.0
+test iteration:
+139
+snr:
+9.0
+test iteration:
+140
+snr:
+9.0
+test iteration:
+141
+snr:
+9.0
+test iteration:
+142
+snr:
+9.0
+test iteration:
+143
+snr:
+9.0
+test iteration:
+144
+snr:
+9.0
+test iteration:
+145
+snr:
+9.0
+test iteration:
+146
+snr:
+9.0
+test iteration:
+147
+snr:
+9.0
+test iteration:
+148
+snr:
+9.0
+test iteration:
+149
+snr:
+9.0
+test iteration:
+150
+snr:
+9.0
+test iteration:
+151
+snr:
+9.0
+test iteration:
+152
+snr:
+9.0
+test iteration:
+153
+snr:
+9.0
+test iteration:
+154
+snr:
+9.0
+test iteration:
+155
+snr:
+9.0
+test iteration:
+156
+snr:
+9.0
+test iteration:
+157
+snr:
+9.0
+test iteration:
+158
+snr:
+9.0
+test iteration:
+159
+snr:
+9.0
+test iteration:
+160
+snr:
+9.0
+test iteration:
+161
+snr:
+9.0
+test iteration:
+162
+snr:
+9.0
+test iteration:
+163
+snr:
+9.0
+test iteration:
+164
+snr:
+9.0
+test iteration:
+165
+snr:
+9.0
+test iteration:
+166
+snr:
+9.0
+test iteration:
+167
+snr:
+9.0
+test iteration:
+168
+snr:
+9.0
+test iteration:
+169
+snr:
+9.0
+test iteration:
+170
+snr:
+9.0
+test iteration:
+171
+snr:
+9.0
+test iteration:
+172
+snr:
+9.0
+test iteration:
+173
+snr:
+9.0
+test iteration:
+174
+snr:
+9.0
+test iteration:
+175
+snr:
+9.0
+test iteration:
+176
+snr:
+9.0
+test iteration:
+177
+snr:
+9.0
+test iteration:
+178
+snr:
+9.0
+test iteration:
+179
+snr:
+9.0
+test iteration:
+180
+snr:
+9.0
+test iteration:
+181
+snr:
+9.0
+test iteration:
+182
+snr:
+9.0
+test iteration:
+183
+snr:
+9.0
+test iteration:
+184
+snr:
+9.0
+test iteration:
+185
+snr:
+9.0
+test iteration:
+186
+snr:
+9.0
+test iteration:
+187
+snr:
+9.0
+test iteration:
+188
+snr:
+9.0
+test iteration:
+189
+snr:
+9.0
+test iteration:
+190
+snr:
+9.0
+test iteration:
+191
+snr:
+9.0
+test iteration:
+192
+snr:
+9.0
+test iteration:
+193
+snr:
+9.0
+test iteration:
+194
+snr:
+9.0
+test iteration:
+195
+snr:
+9.0
+test iteration:
+196
+snr:
+9.0
+test iteration:
+197
+snr:
+9.0
+test iteration:
+198
+snr:
+9.0
+test iteration:
+199
+snr:
+10.0
+test iteration:
+0
+snr:
+10.0
+test iteration:
+1
+snr:
+10.0
+test iteration:
+2
+snr:
+10.0
+test iteration:
+3
+snr:
+10.0
+test iteration:
+4
+snr:
+10.0
+test iteration:
+5
+snr:
+10.0
+test iteration:
+6
+snr:
+10.0
+test iteration:
+7
+snr:
+10.0
+test iteration:
+8
+snr:
+10.0
+test iteration:
+9
+snr:
+10.0
+test iteration:
+10
+snr:
+10.0
+test iteration:
+11
+snr:
+10.0
+test iteration:
+12
+snr:
+10.0
+test iteration:
+13
+snr:
+10.0
+test iteration:
+14
+snr:
+10.0
+test iteration:
+15
+snr:
+10.0
+test iteration:
+16
+snr:
+10.0
+test iteration:
+17
+snr:
+10.0
+test iteration:
+18
+snr:
+10.0
+test iteration:
+19
+snr:
+10.0
+test iteration:
+20
+snr:
+10.0
+test iteration:
+21
+snr:
+10.0
+test iteration:
+22
+snr:
+10.0
+test iteration:
+23
+snr:
+10.0
+test iteration:
+24
+snr:
+10.0
+test iteration:
+25
+snr:
+10.0
+test iteration:
+26
+snr:
+10.0
+test iteration:
+27
+snr:
+10.0
+test iteration:
+28
+snr:
+10.0
+test iteration:
+29
+snr:
+10.0
+test iteration:
+30
+snr:
+10.0
+test iteration:
+31
+snr:
+10.0
+test iteration:
+32
+snr:
+10.0
+test iteration:
+33
+snr:
+10.0
+test iteration:
+34
+snr:
+10.0
+test iteration:
+35
+snr:
+10.0
+test iteration:
+36
+snr:
+10.0
+test iteration:
+37
+snr:
+10.0
+test iteration:
+38
+snr:
+10.0
+test iteration:
+39
+snr:
+10.0
+test iteration:
+40
+snr:
+10.0
+test iteration:
+41
+snr:
+10.0
+test iteration:
+42
+snr:
+10.0
+test iteration:
+43
+snr:
+10.0
+test iteration:
+44
+snr:
+10.0
+test iteration:
+45
+snr:
+10.0
+test iteration:
+46
+snr:
+10.0
+test iteration:
+47
+snr:
+10.0
+test iteration:
+48
+snr:
+10.0
+test iteration:
+49
+snr:
+10.0
+test iteration:
+50
+snr:
+10.0
+test iteration:
+51
+snr:
+10.0
+test iteration:
+52
+snr:
+10.0
+test iteration:
+53
+snr:
+10.0
+test iteration:
+54
+snr:
+10.0
+test iteration:
+55
+snr:
+10.0
+test iteration:
+56
+snr:
+10.0
+test iteration:
+57
+snr:
+10.0
+test iteration:
+58
+snr:
+10.0
+test iteration:
+59
+snr:
+10.0
+test iteration:
+60
+snr:
+10.0
+test iteration:
+61
+snr:
+10.0
+test iteration:
+62
+snr:
+10.0
+test iteration:
+63
+snr:
+10.0
+test iteration:
+64
+snr:
+10.0
+test iteration:
+65
+snr:
+10.0
+test iteration:
+66
+snr:
+10.0
+test iteration:
+67
+snr:
+10.0
+test iteration:
+68
+snr:
+10.0
+test iteration:
+69
+snr:
+10.0
+test iteration:
+70
+snr:
+10.0
+test iteration:
+71
+snr:
+10.0
+test iteration:
+72
+snr:
+10.0
+test iteration:
+73
+snr:
+10.0
+test iteration:
+74
+snr:
+10.0
+test iteration:
+75
+snr:
+10.0
+test iteration:
+76
+snr:
+10.0
+test iteration:
+77
+snr:
+10.0
+test iteration:
+78
+snr:
+10.0
+test iteration:
+79
+snr:
+10.0
+test iteration:
+80
+snr:
+10.0
+test iteration:
+81
+snr:
+10.0
+test iteration:
+82
+snr:
+10.0
+test iteration:
+83
+snr:
+10.0
+test iteration:
+84
+snr:
+10.0
+test iteration:
+85
+snr:
+10.0
+test iteration:
+86
+snr:
+10.0
+test iteration:
+87
+snr:
+10.0
+test iteration:
+88
+snr:
+10.0
+test iteration:
+89
+snr:
+10.0
+test iteration:
+90
+snr:
+10.0
+test iteration:
+91
+snr:
+10.0
+test iteration:
+92
+snr:
+10.0
+test iteration:
+93
+snr:
+10.0
+test iteration:
+94
+snr:
+10.0
+test iteration:
+95
+snr:
+10.0
+test iteration:
+96
+snr:
+10.0
+test iteration:
+97
+snr:
+10.0
+test iteration:
+98
+snr:
+10.0
+test iteration:
+99
+snr:
+10.0
+test iteration:
+100
+snr:
+10.0
+test iteration:
+101
+snr:
+10.0
+test iteration:
+102
+snr:
+10.0
+test iteration:
+103
+snr:
+10.0
+test iteration:
+104
+snr:
+10.0
+test iteration:
+105
+snr:
+10.0
+test iteration:
+106
+snr:
+10.0
+test iteration:
+107
+snr:
+10.0
+test iteration:
+108
+snr:
+10.0
+test iteration:
+109
+snr:
+10.0
+test iteration:
+110
+snr:
+10.0
+test iteration:
+111
+snr:
+10.0
+test iteration:
+112
+snr:
+10.0
+test iteration:
+113
+snr:
+10.0
+test iteration:
+114
+snr:
+10.0
+test iteration:
+115
+snr:
+10.0
+test iteration:
+116
+snr:
+10.0
+test iteration:
+117
+snr:
+10.0
+test iteration:
+118
+snr:
+10.0
+test iteration:
+119
+snr:
+10.0
+test iteration:
+120
+snr:
+10.0
+test iteration:
+121
+snr:
+10.0
+test iteration:
+122
+snr:
+10.0
+test iteration:
+123
+snr:
+10.0
+test iteration:
+124
+snr:
+10.0
+test iteration:
+125
+snr:
+10.0
+test iteration:
+126
+snr:
+10.0
+test iteration:
+127
+snr:
+10.0
+test iteration:
+128
+snr:
+10.0
+test iteration:
+129
+snr:
+10.0
+test iteration:
+130
+snr:
+10.0
+test iteration:
+131
+snr:
+10.0
+test iteration:
+132
+snr:
+10.0
+test iteration:
+133
+snr:
+10.0
+test iteration:
+134
+snr:
+10.0
+test iteration:
+135
+snr:
+10.0
+test iteration:
+136
+snr:
+10.0
+test iteration:
+137
+snr:
+10.0
+test iteration:
+138
+snr:
+10.0
+test iteration:
+139
+snr:
+10.0
+test iteration:
+140
+snr:
+10.0
+test iteration:
+141
+snr:
+10.0
+test iteration:
+142
+snr:
+10.0
+test iteration:
+143
+snr:
+10.0
+test iteration:
+144
+snr:
+10.0
+test iteration:
+145
+snr:
+10.0
+test iteration:
+146
+snr:
+10.0
+test iteration:
+147
+snr:
+10.0
+test iteration:
+148
+snr:
+10.0
+test iteration:
+149
+snr:
+10.0
+test iteration:
+150
+snr:
+10.0
+test iteration:
+151
+snr:
+10.0
+test iteration:
+152
+snr:
+10.0
+test iteration:
+153
+snr:
+10.0
+test iteration:
+154
+snr:
+10.0
+test iteration:
+155
+snr:
+10.0
+test iteration:
+156
+snr:
+10.0
+test iteration:
+157
+snr:
+10.0
+test iteration:
+158
+snr:
+10.0
+test iteration:
+159
+snr:
+10.0
+test iteration:
+160
+snr:
+10.0
+test iteration:
+161
+snr:
+10.0
+test iteration:
+162
+snr:
+10.0
+test iteration:
+163
+snr:
+10.0
+test iteration:
+164
+snr:
+10.0
+test iteration:
+165
+snr:
+10.0
+test iteration:
+166
+snr:
+10.0
+test iteration:
+167
+snr:
+10.0
+test iteration:
+168
+snr:
+10.0
+test iteration:
+169
+snr:
+10.0
+test iteration:
+170
+snr:
+10.0
+test iteration:
+171
+snr:
+10.0
+test iteration:
+172
+snr:
+10.0
+test iteration:
+173
+snr:
+10.0
+test iteration:
+174
+snr:
+10.0
+test iteration:
+175
+snr:
+10.0
+test iteration:
+176
+snr:
+10.0
+test iteration:
+177
+snr:
+10.0
+test iteration:
+178
+snr:
+10.0
+test iteration:
+179
+snr:
+10.0
+test iteration:
+180
+snr:
+10.0
+test iteration:
+181
+snr:
+10.0
+test iteration:
+182
+snr:
+10.0
+test iteration:
+183
+snr:
+10.0
+test iteration:
+184
+snr:
+10.0
+test iteration:
+185
+snr:
+10.0
+test iteration:
+186
+snr:
+10.0
+test iteration:
+187
+snr:
+10.0
+test iteration:
+188
+snr:
+10.0
+test iteration:
+189
+snr:
+10.0
+test iteration:
+190
+snr:
+10.0
+test iteration:
+191
+snr:
+10.0
+test iteration:
+192
+snr:
+10.0
+test iteration:
+193
+snr:
+10.0
+test iteration:
+194
+snr:
+10.0
+test iteration:
+195
+snr:
+10.0
+test iteration:
+196
+snr:
+10.0
+test iteration:
+197
+snr:
+10.0
+test iteration:
+198
+snr:
+10.0
+test iteration:
+199
+snr:
+11.0
+test iteration:
+0
+snr:
+11.0
+test iteration:
+1
+snr:
+11.0
+test iteration:
+2
+snr:
+11.0
+test iteration:
+3
+snr:
+11.0
+test iteration:
+4
+snr:
+11.0
+test iteration:
+5
+snr:
+11.0
+test iteration:
+6
+snr:
+11.0
+test iteration:
+7
+snr:
+11.0
+test iteration:
+8
+snr:
+11.0
+test iteration:
+9
+snr:
+11.0
+test iteration:
+10
+snr:
+11.0
+test iteration:
+11
+snr:
+11.0
+test iteration:
+12
+snr:
+11.0
+test iteration:
+13
+snr:
+11.0
+test iteration:
+14
+snr:
+11.0
+test iteration:
+15
+snr:
+11.0
+test iteration:
+16
+snr:
+11.0
+test iteration:
+17
+snr:
+11.0
+test iteration:
+18
+snr:
+11.0
+test iteration:
+19
+snr:
+11.0
+test iteration:
+20
+snr:
+11.0
+test iteration:
+21
+snr:
+11.0
+test iteration:
+22
+snr:
+11.0
+test iteration:
+23
+snr:
+11.0
+test iteration:
+24
+snr:
+11.0
+test iteration:
+25
+snr:
+11.0
+test iteration:
+26
+snr:
+11.0
+test iteration:
+27
+snr:
+11.0
+test iteration:
+28
+snr:
+11.0
+test iteration:
+29
+snr:
+11.0
+test iteration:
+30
+snr:
+11.0
+test iteration:
+31
+snr:
+11.0
+test iteration:
+32
+snr:
+11.0
+test iteration:
+33
+snr:
+11.0
+test iteration:
+34
+snr:
+11.0
+test iteration:
+35
+snr:
+11.0
+test iteration:
+36
+snr:
+11.0
+test iteration:
+37
+snr:
+11.0
+test iteration:
+38
+snr:
+11.0
+test iteration:
+39
+snr:
+11.0
+test iteration:
+40
+snr:
+11.0
+test iteration:
+41
+snr:
+11.0
+test iteration:
+42
+snr:
+11.0
+test iteration:
+43
+snr:
+11.0
+test iteration:
+44
+snr:
+11.0
+test iteration:
+45
+snr:
+11.0
+test iteration:
+46
+snr:
+11.0
+test iteration:
+47
+snr:
+11.0
+test iteration:
+48
+snr:
+11.0
+test iteration:
+49
+snr:
+11.0
+test iteration:
+50
+snr:
+11.0
+test iteration:
+51
+snr:
+11.0
+test iteration:
+52
+snr:
+11.0
+test iteration:
+53
+snr:
+11.0
+test iteration:
+54
+snr:
+11.0
+test iteration:
+55
+snr:
+11.0
+test iteration:
+56
+snr:
+11.0
+test iteration:
+57
+snr:
+11.0
+test iteration:
+58
+snr:
+11.0
+test iteration:
+59
+snr:
+11.0
+test iteration:
+60
+snr:
+11.0
+test iteration:
+61
+snr:
+11.0
+test iteration:
+62
+snr:
+11.0
+test iteration:
+63
+snr:
+11.0
+test iteration:
+64
+snr:
+11.0
+test iteration:
+65
+snr:
+11.0
+test iteration:
+66
+snr:
+11.0
+test iteration:
+67
+snr:
+11.0
+test iteration:
+68
+snr:
+11.0
+test iteration:
+69
+snr:
+11.0
+test iteration:
+70
+snr:
+11.0
+test iteration:
+71
+snr:
+11.0
+test iteration:
+72
+snr:
+11.0
+test iteration:
+73
+snr:
+11.0
+test iteration:
+74
+snr:
+11.0
+test iteration:
+75
+snr:
+11.0
+test iteration:
+76
+snr:
+11.0
+test iteration:
+77
+snr:
+11.0
+test iteration:
+78
+snr:
+11.0
+test iteration:
+79
+snr:
+11.0
+test iteration:
+80
+snr:
+11.0
+test iteration:
+81
+snr:
+11.0
+test iteration:
+82
+snr:
+11.0
+test iteration:
+83
+snr:
+11.0
+test iteration:
+84
+snr:
+11.0
+test iteration:
+85
+snr:
+11.0
+test iteration:
+86
+snr:
+11.0
+test iteration:
+87
+snr:
+11.0
+test iteration:
+88
+snr:
+11.0
+test iteration:
+89
+snr:
+11.0
+test iteration:
+90
+snr:
+11.0
+test iteration:
+91
+snr:
+11.0
+test iteration:
+92
+snr:
+11.0
+test iteration:
+93
+snr:
+11.0
+test iteration:
+94
+snr:
+11.0
+test iteration:
+95
+snr:
+11.0
+test iteration:
+96
+snr:
+11.0
+test iteration:
+97
+snr:
+11.0
+test iteration:
+98
+snr:
+11.0
+test iteration:
+99
+snr:
+11.0
+test iteration:
+100
+snr:
+11.0
+test iteration:
+101
+snr:
+11.0
+test iteration:
+102
+snr:
+11.0
+test iteration:
+103
+snr:
+11.0
+test iteration:
+104
+snr:
+11.0
+test iteration:
+105
+snr:
+11.0
+test iteration:
+106
+snr:
+11.0
+test iteration:
+107
+snr:
+11.0
+test iteration:
+108
+snr:
+11.0
+test iteration:
+109
+snr:
+11.0
+test iteration:
+110
+snr:
+11.0
+test iteration:
+111
+snr:
+11.0
+test iteration:
+112
+snr:
+11.0
+test iteration:
+113
+snr:
+11.0
+test iteration:
+114
+snr:
+11.0
+test iteration:
+115
+snr:
+11.0
+test iteration:
+116
+snr:
+11.0
+test iteration:
+117
+snr:
+11.0
+test iteration:
+118
+snr:
+11.0
+test iteration:
+119
+snr:
+11.0
+test iteration:
+120
+snr:
+11.0
+test iteration:
+121
+snr:
+11.0
+test iteration:
+122
+snr:
+11.0
+test iteration:
+123
+snr:
+11.0
+test iteration:
+124
+snr:
+11.0
+test iteration:
+125
+snr:
+11.0
+test iteration:
+126
+snr:
+11.0
+test iteration:
+127
+snr:
+11.0
+test iteration:
+128
+snr:
+11.0
+test iteration:
+129
+snr:
+11.0
+test iteration:
+130
+snr:
+11.0
+test iteration:
+131
+snr:
+11.0
+test iteration:
+132
+snr:
+11.0
+test iteration:
+133
+snr:
+11.0
+test iteration:
+134
+snr:
+11.0
+test iteration:
+135
+snr:
+11.0
+test iteration:
+136
+snr:
+11.0
+test iteration:
+137
+snr:
+11.0
+test iteration:
+138
+snr:
+11.0
+test iteration:
+139
+snr:
+11.0
+test iteration:
+140
+snr:
+11.0
+test iteration:
+141
+snr:
+11.0
+test iteration:
+142
+snr:
+11.0
+test iteration:
+143
+snr:
+11.0
+test iteration:
+144
+snr:
+11.0
+test iteration:
+145
+snr:
+11.0
+test iteration:
+146
+snr:
+11.0
+test iteration:
+147
+snr:
+11.0
+test iteration:
+148
+snr:
+11.0
+test iteration:
+149
+snr:
+11.0
+test iteration:
+150
+snr:
+11.0
+test iteration:
+151
+snr:
+11.0
+test iteration:
+152
+snr:
+11.0
+test iteration:
+153
+snr:
+11.0
+test iteration:
+154
+snr:
+11.0
+test iteration:
+155
+snr:
+11.0
+test iteration:
+156
+snr:
+11.0
+test iteration:
+157
+snr:
+11.0
+test iteration:
+158
+snr:
+11.0
+test iteration:
+159
+snr:
+11.0
+test iteration:
+160
+snr:
+11.0
+test iteration:
+161
+snr:
+11.0
+test iteration:
+162
+snr:
+11.0
+test iteration:
+163
+snr:
+11.0
+test iteration:
+164
+snr:
+11.0
+test iteration:
+165
+snr:
+11.0
+test iteration:
+166
+snr:
+11.0
+test iteration:
+167
+snr:
+11.0
+test iteration:
+168
+snr:
+11.0
+test iteration:
+169
+snr:
+11.0
+test iteration:
+170
+snr:
+11.0
+test iteration:
+171
+snr:
+11.0
+test iteration:
+172
+snr:
+11.0
+test iteration:
+173
+snr:
+11.0
+test iteration:
+174
+snr:
+11.0
+test iteration:
+175
+snr:
+11.0
+test iteration:
+176
+snr:
+11.0
+test iteration:
+177
+snr:
+11.0
+test iteration:
+178
+snr:
+11.0
+test iteration:
+179
+snr:
+11.0
+test iteration:
+180
+snr:
+11.0
+test iteration:
+181
+snr:
+11.0
+test iteration:
+182
+snr:
+11.0
+test iteration:
+183
+snr:
+11.0
+test iteration:
+184
+snr:
+11.0
+test iteration:
+185
+snr:
+11.0
+test iteration:
+186
+snr:
+11.0
+test iteration:
+187
+snr:
+11.0
+test iteration:
+188
+snr:
+11.0
+test iteration:
+189
+snr:
+11.0
+test iteration:
+190
+snr:
+11.0
+test iteration:
+191
+snr:
+11.0
+test iteration:
+192
+snr:
+11.0
+test iteration:
+193
+snr:
+11.0
+test iteration:
+194
+snr:
+11.0
+test iteration:
+195
+snr:
+11.0
+test iteration:
+196
+snr:
+11.0
+test iteration:
+197
+snr:
+11.0
+test iteration:
+198
+snr:
+11.0
+test iteration:
+199
+snr:
+12.0
+test iteration:
+0
+snr:
+12.0
+test iteration:
+1
+snr:
+12.0
+test iteration:
+2
+snr:
+12.0
+test iteration:
+3
+snr:
+12.0
+test iteration:
+4
+snr:
+12.0
+test iteration:
+5
+snr:
+12.0
+test iteration:
+6
+snr:
+12.0
+test iteration:
+7
+snr:
+12.0
+test iteration:
+8
+snr:
+12.0
+test iteration:
+9
+snr:
+12.0
+test iteration:
+10
+snr:
+12.0
+test iteration:
+11
+snr:
+12.0
+test iteration:
+12
+snr:
+12.0
+test iteration:
+13
+snr:
+12.0
+test iteration:
+14
+snr:
+12.0
+test iteration:
+15
+snr:
+12.0
+test iteration:
+16
+snr:
+12.0
+test iteration:
+17
+snr:
+12.0
+test iteration:
+18
+snr:
+12.0
+test iteration:
+19
+snr:
+12.0
+test iteration:
+20
+snr:
+12.0
+test iteration:
+21
+snr:
+12.0
+test iteration:
+22
+snr:
+12.0
+test iteration:
+23
+snr:
+12.0
+test iteration:
+24
+snr:
+12.0
+test iteration:
+25
+snr:
+12.0
+test iteration:
+26
+snr:
+12.0
+test iteration:
+27
+snr:
+12.0
+test iteration:
+28
+snr:
+12.0
+test iteration:
+29
+snr:
+12.0
+test iteration:
+30
+snr:
+12.0
+test iteration:
+31
+snr:
+12.0
+test iteration:
+32
+snr:
+12.0
+test iteration:
+33
+snr:
+12.0
+test iteration:
+34
+snr:
+12.0
+test iteration:
+35
+snr:
+12.0
+test iteration:
+36
+snr:
+12.0
+test iteration:
+37
+snr:
+12.0
+test iteration:
+38
+snr:
+12.0
+test iteration:
+39
+snr:
+12.0
+test iteration:
+40
+snr:
+12.0
+test iteration:
+41
+snr:
+12.0
+test iteration:
+42
+snr:
+12.0
+test iteration:
+43
+snr:
+12.0
+test iteration:
+44
+snr:
+12.0
+test iteration:
+45
+snr:
+12.0
+test iteration:
+46
+snr:
+12.0
+test iteration:
+47
+snr:
+12.0
+test iteration:
+48
+snr:
+12.0
+test iteration:
+49
+snr:
+12.0
+test iteration:
+50
+snr:
+12.0
+test iteration:
+51
+snr:
+12.0
+test iteration:
+52
+snr:
+12.0
+test iteration:
+53
+snr:
+12.0
+test iteration:
+54
+snr:
+12.0
+test iteration:
+55
+snr:
+12.0
+test iteration:
+56
+snr:
+12.0
+test iteration:
+57
+snr:
+12.0
+test iteration:
+58
+snr:
+12.0
+test iteration:
+59
+snr:
+12.0
+test iteration:
+60
+snr:
+12.0
+test iteration:
+61
+snr:
+12.0
+test iteration:
+62
+snr:
+12.0
+test iteration:
+63
+snr:
+12.0
+test iteration:
+64
+snr:
+12.0
+test iteration:
+65
+snr:
+12.0
+test iteration:
+66
+snr:
+12.0
+test iteration:
+67
+snr:
+12.0
+test iteration:
+68
+snr:
+12.0
+test iteration:
+69
+snr:
+12.0
+test iteration:
+70
+snr:
+12.0
+test iteration:
+71
+snr:
+12.0
+test iteration:
+72
+snr:
+12.0
+test iteration:
+73
+snr:
+12.0
+test iteration:
+74
+snr:
+12.0
+test iteration:
+75
+snr:
+12.0
+test iteration:
+76
+snr:
+12.0
+test iteration:
+77
+snr:
+12.0
+test iteration:
+78
+snr:
+12.0
+test iteration:
+79
+snr:
+12.0
+test iteration:
+80
+snr:
+12.0
+test iteration:
+81
+snr:
+12.0
+test iteration:
+82
+snr:
+12.0
+test iteration:
+83
+snr:
+12.0
+test iteration:
+84
+snr:
+12.0
+test iteration:
+85
+snr:
+12.0
+test iteration:
+86
+snr:
+12.0
+test iteration:
+87
+snr:
+12.0
+test iteration:
+88
+snr:
+12.0
+test iteration:
+89
+snr:
+12.0
+test iteration:
+90
+snr:
+12.0
+test iteration:
+91
+snr:
+12.0
+test iteration:
+92
+snr:
+12.0
+test iteration:
+93
+snr:
+12.0
+test iteration:
+94
+snr:
+12.0
+test iteration:
+95
+snr:
+12.0
+test iteration:
+96
+snr:
+12.0
+test iteration:
+97
+snr:
+12.0
+test iteration:
+98
+snr:
+12.0
+test iteration:
+99
+snr:
+12.0
+test iteration:
+100
+snr:
+12.0
+test iteration:
+101
+snr:
+12.0
+test iteration:
+102
+snr:
+12.0
+test iteration:
+103
+snr:
+12.0
+test iteration:
+104
+snr:
+12.0
+test iteration:
+105
+snr:
+12.0
+test iteration:
+106
+snr:
+12.0
+test iteration:
+107
+snr:
+12.0
+test iteration:
+108
+snr:
+12.0
+test iteration:
+109
+snr:
+12.0
+test iteration:
+110
+snr:
+12.0
+test iteration:
+111
+snr:
+12.0
+test iteration:
+112
+snr:
+12.0
+test iteration:
+113
+snr:
+12.0
+test iteration:
+114
+snr:
+12.0
+test iteration:
+115
+snr:
+12.0
+test iteration:
+116
+snr:
+12.0
+test iteration:
+117
+snr:
+12.0
+test iteration:
+118
+snr:
+12.0
+test iteration:
+119
+snr:
+12.0
+test iteration:
+120
+snr:
+12.0
+test iteration:
+121
+snr:
+12.0
+test iteration:
+122
+snr:
+12.0
+test iteration:
+123
+snr:
+12.0
+test iteration:
+124
+snr:
+12.0
+test iteration:
+125
+snr:
+12.0
+test iteration:
+126
+snr:
+12.0
+test iteration:
+127
+snr:
+12.0
+test iteration:
+128
+snr:
+12.0
+test iteration:
+129
+snr:
+12.0
+test iteration:
+130
+snr:
+12.0
+test iteration:
+131
+snr:
+12.0
+test iteration:
+132
+snr:
+12.0
+test iteration:
+133
+snr:
+12.0
+test iteration:
+134
+snr:
+12.0
+test iteration:
+135
+snr:
+12.0
+test iteration:
+136
+snr:
+12.0
+test iteration:
+137
+snr:
+12.0
+test iteration:
+138
+snr:
+12.0
+test iteration:
+139
+snr:
+12.0
+test iteration:
+140
+snr:
+12.0
+test iteration:
+141
+snr:
+12.0
+test iteration:
+142
+snr:
+12.0
+test iteration:
+143
+snr:
+12.0
+test iteration:
+144
+snr:
+12.0
+test iteration:
+145
+snr:
+12.0
+test iteration:
+146
+snr:
+12.0
+test iteration:
+147
+snr:
+12.0
+test iteration:
+148
+snr:
+12.0
+test iteration:
+149
+snr:
+12.0
+test iteration:
+150
+snr:
+12.0
+test iteration:
+151
+snr:
+12.0
+test iteration:
+152
+snr:
+12.0
+test iteration:
+153
+snr:
+12.0
+test iteration:
+154
+snr:
+12.0
+test iteration:
+155
+snr:
+12.0
+test iteration:
+156
+snr:
+12.0
+test iteration:
+157
+snr:
+12.0
+test iteration:
+158
+snr:
+12.0
+test iteration:
+159
+snr:
+12.0
+test iteration:
+160
+snr:
+12.0
+test iteration:
+161
+snr:
+12.0
+test iteration:
+162
+snr:
+12.0
+test iteration:
+163
+snr:
+12.0
+test iteration:
+164
+snr:
+12.0
+test iteration:
+165
+snr:
+12.0
+test iteration:
+166
+snr:
+12.0
+test iteration:
+167
+snr:
+12.0
+test iteration:
+168
+snr:
+12.0
+test iteration:
+169
+snr:
+12.0
+test iteration:
+170
+snr:
+12.0
+test iteration:
+171
+snr:
+12.0
+test iteration:
+172
+snr:
+12.0
+test iteration:
+173
+snr:
+12.0
+test iteration:
+174
+snr:
+12.0
+test iteration:
+175
+snr:
+12.0
+test iteration:
+176
+snr:
+12.0
+test iteration:
+177
+snr:
+12.0
+test iteration:
+178
+snr:
+12.0
+test iteration:
+179
+snr:
+12.0
+test iteration:
+180
+snr:
+12.0
+test iteration:
+181
+snr:
+12.0
+test iteration:
+182
+snr:
+12.0
+test iteration:
+183
+snr:
+12.0
+test iteration:
+184
+snr:
+12.0
+test iteration:
+185
+snr:
+12.0
+test iteration:
+186
+snr:
+12.0
+test iteration:
+187
+snr:
+12.0
+test iteration:
+188
+snr:
+12.0
+test iteration:
+189
+snr:
+12.0
+test iteration:
+190
+snr:
+12.0
+test iteration:
+191
+snr:
+12.0
+test iteration:
+192
+snr:
+12.0
+test iteration:
+193
+snr:
+12.0
+test iteration:
+194
+snr:
+12.0
+test iteration:
+195
+snr:
+12.0
+test iteration:
+196
+snr:
+12.0
+test iteration:
+197
+snr:
+12.0
+test iteration:
+198
+snr:
+12.0
+test iteration:
+199
+snr:
+13.0
+test iteration:
+0
+snr:
+13.0
+test iteration:
+1
+snr:
+13.0
+test iteration:
+2
+snr:
+13.0
+test iteration:
+3
+snr:
+13.0
+test iteration:
+4
+snr:
+13.0
+test iteration:
+5
+snr:
+13.0
+test iteration:
+6
+snr:
+13.0
+test iteration:
+7
+snr:
+13.0
+test iteration:
+8
+snr:
+13.0
+test iteration:
+9
+snr:
+13.0
+test iteration:
+10
+snr:
+13.0
+test iteration:
+11
+snr:
+13.0
+test iteration:
+12
+snr:
+13.0
+test iteration:
+13
+snr:
+13.0
+test iteration:
+14
+snr:
+13.0
+test iteration:
+15
+snr:
+13.0
+test iteration:
+16
+snr:
+13.0
+test iteration:
+17
+snr:
+13.0
+test iteration:
+18
+snr:
+13.0
+test iteration:
+19
+snr:
+13.0
+test iteration:
+20
+snr:
+13.0
+test iteration:
+21
+snr:
+13.0
+test iteration:
+22
+snr:
+13.0
+test iteration:
+23
+snr:
+13.0
+test iteration:
+24
+snr:
+13.0
+test iteration:
+25
+snr:
+13.0
+test iteration:
+26
+snr:
+13.0
+test iteration:
+27
+snr:
+13.0
+test iteration:
+28
+snr:
+13.0
+test iteration:
+29
+snr:
+13.0
+test iteration:
+30
+snr:
+13.0
+test iteration:
+31
+snr:
+13.0
+test iteration:
+32
+snr:
+13.0
+test iteration:
+33
+snr:
+13.0
+test iteration:
+34
+snr:
+13.0
+test iteration:
+35
+snr:
+13.0
+test iteration:
+36
+snr:
+13.0
+test iteration:
+37
+snr:
+13.0
+test iteration:
+38
+snr:
+13.0
+test iteration:
+39
+snr:
+13.0
+test iteration:
+40
+snr:
+13.0
+test iteration:
+41
+snr:
+13.0
+test iteration:
+42
+snr:
+13.0
+test iteration:
+43
+snr:
+13.0
+test iteration:
+44
+snr:
+13.0
+test iteration:
+45
+snr:
+13.0
+test iteration:
+46
+snr:
+13.0
+test iteration:
+47
+snr:
+13.0
+test iteration:
+48
+snr:
+13.0
+test iteration:
+49
+snr:
+13.0
+test iteration:
+50
+snr:
+13.0
+test iteration:
+51
+snr:
+13.0
+test iteration:
+52
+snr:
+13.0
+test iteration:
+53
+snr:
+13.0
+test iteration:
+54
+snr:
+13.0
+test iteration:
+55
+snr:
+13.0
+test iteration:
+56
+snr:
+13.0
+test iteration:
+57
+snr:
+13.0
+test iteration:
+58
+snr:
+13.0
+test iteration:
+59
+snr:
+13.0
+test iteration:
+60
+snr:
+13.0
+test iteration:
+61
+snr:
+13.0
+test iteration:
+62
+snr:
+13.0
+test iteration:
+63
+snr:
+13.0
+test iteration:
+64
+snr:
+13.0
+test iteration:
+65
+snr:
+13.0
+test iteration:
+66
+snr:
+13.0
+test iteration:
+67
+snr:
+13.0
+test iteration:
+68
+snr:
+13.0
+test iteration:
+69
+snr:
+13.0
+test iteration:
+70
+snr:
+13.0
+test iteration:
+71
+snr:
+13.0
+test iteration:
+72
+snr:
+13.0
+test iteration:
+73
+snr:
+13.0
+test iteration:
+74
+snr:
+13.0
+test iteration:
+75
+snr:
+13.0
+test iteration:
+76
+snr:
+13.0
+test iteration:
+77
+snr:
+13.0
+test iteration:
+78
+snr:
+13.0
+test iteration:
+79
+snr:
+13.0
+test iteration:
+80
+snr:
+13.0
+test iteration:
+81
+snr:
+13.0
+test iteration:
+82
+snr:
+13.0
+test iteration:
+83
+snr:
+13.0
+test iteration:
+84
+snr:
+13.0
+test iteration:
+85
+snr:
+13.0
+test iteration:
+86
+snr:
+13.0
+test iteration:
+87
+snr:
+13.0
+test iteration:
+88
+snr:
+13.0
+test iteration:
+89
+snr:
+13.0
+test iteration:
+90
+snr:
+13.0
+test iteration:
+91
+snr:
+13.0
+test iteration:
+92
+snr:
+13.0
+test iteration:
+93
+snr:
+13.0
+test iteration:
+94
+snr:
+13.0
+test iteration:
+95
+snr:
+13.0
+test iteration:
+96
+snr:
+13.0
+test iteration:
+97
+snr:
+13.0
+test iteration:
+98
+snr:
+13.0
+test iteration:
+99
+snr:
+13.0
+test iteration:
+100
+snr:
+13.0
+test iteration:
+101
+snr:
+13.0
+test iteration:
+102
+snr:
+13.0
+test iteration:
+103
+snr:
+13.0
+test iteration:
+104
+snr:
+13.0
+test iteration:
+105
+snr:
+13.0
+test iteration:
+106
+snr:
+13.0
+test iteration:
+107
+snr:
+13.0
+test iteration:
+108
+snr:
+13.0
+test iteration:
+109
+snr:
+13.0
+test iteration:
+110
+snr:
+13.0
+test iteration:
+111
+snr:
+13.0
+test iteration:
+112
+snr:
+13.0
+test iteration:
+113
+snr:
+13.0
+test iteration:
+114
+snr:
+13.0
+test iteration:
+115
+snr:
+13.0
+test iteration:
+116
+snr:
+13.0
+test iteration:
+117
+snr:
+13.0
+test iteration:
+118
+snr:
+13.0
+test iteration:
+119
+snr:
+13.0
+test iteration:
+120
+snr:
+13.0
+test iteration:
+121
+snr:
+13.0
+test iteration:
+122
+snr:
+13.0
+test iteration:
+123
+snr:
+13.0
+test iteration:
+124
+snr:
+13.0
+test iteration:
+125
+snr:
+13.0
+test iteration:
+126
+snr:
+13.0
+test iteration:
+127
+snr:
+13.0
+test iteration:
+128
+snr:
+13.0
+test iteration:
+129
+snr:
+13.0
+test iteration:
+130
+snr:
+13.0
+test iteration:
+131
+snr:
+13.0
+test iteration:
+132
+snr:
+13.0
+test iteration:
+133
+snr:
+13.0
+test iteration:
+134
+snr:
+13.0
+test iteration:
+135
+snr:
+13.0
+test iteration:
+136
+snr:
+13.0
+test iteration:
+137
+snr:
+13.0
+test iteration:
+138
+snr:
+13.0
+test iteration:
+139
+snr:
+13.0
+test iteration:
+140
+snr:
+13.0
+test iteration:
+141
+snr:
+13.0
+test iteration:
+142
+snr:
+13.0
+test iteration:
+143
+snr:
+13.0
+test iteration:
+144
+snr:
+13.0
+test iteration:
+145
+snr:
+13.0
+test iteration:
+146
+snr:
+13.0
+test iteration:
+147
+snr:
+13.0
+test iteration:
+148
+snr:
+13.0
+test iteration:
+149
+snr:
+13.0
+test iteration:
+150
+snr:
+13.0
+test iteration:
+151
+snr:
+13.0
+test iteration:
+152
+snr:
+13.0
+test iteration:
+153
+snr:
+13.0
+test iteration:
+154
+snr:
+13.0
+test iteration:
+155
+snr:
+13.0
+test iteration:
+156
+snr:
+13.0
+test iteration:
+157
+snr:
+13.0
+test iteration:
+158
+snr:
+13.0
+test iteration:
+159
+snr:
+13.0
+test iteration:
+160
+snr:
+13.0
+test iteration:
+161
+snr:
+13.0
+test iteration:
+162
+snr:
+13.0
+test iteration:
+163
+snr:
+13.0
+test iteration:
+164
+snr:
+13.0
+test iteration:
+165
+snr:
+13.0
+test iteration:
+166
+snr:
+13.0
+test iteration:
+167
+snr:
+13.0
+test iteration:
+168
+snr:
+13.0
+test iteration:
+169
+snr:
+13.0
+test iteration:
+170
+snr:
+13.0
+test iteration:
+171
+snr:
+13.0
+test iteration:
+172
+snr:
+13.0
+test iteration:
+173
+snr:
+13.0
+test iteration:
+174
+snr:
+13.0
+test iteration:
+175
+snr:
+13.0
+test iteration:
+176
+snr:
+13.0
+test iteration:
+177
+snr:
+13.0
+test iteration:
+178
+snr:
+13.0
+test iteration:
+179
+snr:
+13.0
+test iteration:
+180
+snr:
+13.0
+test iteration:
+181
+snr:
+13.0
+test iteration:
+182
+snr:
+13.0
+test iteration:
+183
+snr:
+13.0
+test iteration:
+184
+snr:
+13.0
+test iteration:
+185
+snr:
+13.0
+test iteration:
+186
+snr:
+13.0
+test iteration:
+187
+snr:
+13.0
+test iteration:
+188
+snr:
+13.0
+test iteration:
+189
+snr:
+13.0
+test iteration:
+190
+snr:
+13.0
+test iteration:
+191
+snr:
+13.0
+test iteration:
+192
+snr:
+13.0
+test iteration:
+193
+snr:
+13.0
+test iteration:
+194
+snr:
+13.0
+test iteration:
+195
+snr:
+13.0
+test iteration:
+196
+snr:
+13.0
+test iteration:
+197
+snr:
+13.0
+test iteration:
+198
+snr:
+13.0
+test iteration:
+199
+snrdb_list
+[  8.   9.  10.  11.  12.  13.]
+bers
+[[ 0.0281945   0.0141895   0.00611125  0.0023255   0.00072825  0.000224  ]]
+times
+[[ 0.00016082  0.0001579   0.00016184  0.00016577  0.00016103  0.00015763]]
+
+Process finished with exit code 0
