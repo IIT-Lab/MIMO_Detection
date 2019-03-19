@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import datetime
+
 import tensorflow as tf
 import numpy as np
 import time as tm
@@ -30,13 +32,14 @@ sess = tf.InteractiveSession()
 tic = tm.time()
 global_tic=tm.time()
 # parameters
-K = 15
-N = 30
+K = 40
+N = 80
+L = 6
+
 snrdb_low = 7.0
 snrdb_high = 14.0
 snr_low = 10.0 ** (snrdb_low / 10.0)
 snr_high = 10.0 ** (snrdb_high / 10.0)
-L = 90
 v_size = 2 * K
 hl_size = 8 * K
 startingLearningRate = 0.0001
@@ -58,6 +61,9 @@ This duplication is in order to easily allow testing cases where the test is ove
 e.g. training over gaussian i.i.d. channels and testing over a specific constant channel.
 currently both test and train are over i.i.d gaussian channel.
 """
+nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 现在
+print("K=", K, "N=", N, "L=", L, "train_iter=", train_iter, "now=", nowTime)
+
 
 
 def generate_data_iid_test(B, K, N, snr_low, snr_high):
@@ -169,7 +175,7 @@ global_step = tf.Variable(0, trainable=False)
 learning_rate = tf.train.exponential_decay(startingLearningRate, global_step, decay_step_size, decay_factor,
                                            staircase=True)
 train_step = tf.train.AdamOptimizer(learning_rate).minimize(TOTAL_LOSS)
-init_op = tf.initialize_all_variables()
+init_op = tf.global_variables_initializer()
 
 sess.run(init_op)
 # Training DetNet
@@ -180,7 +186,7 @@ for i in range(train_iter):  # num of train iter
         batch_Y, batch_H, batch_HY, batch_HH, batch_X, SNR1 = generate_data_iid_test(train_batch_size, K, N, snr_low, snr_high)
         results = sess.run([loss_LS, LOSS[L - 1], ber_LS, BER[L - 1]], {HY: batch_HY, HH: batch_HH, X: batch_X})
         print_string = [i] + results
-        print(' '.join('%s' % x for x in print_string))
+        print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "|", ' '.join('%s' % x for x in print_string))
 
 # Testing the trained model
 snrdb_list = np.linspace(snrdb_low_test, snrdb_high_test, num_snr)
@@ -190,11 +196,8 @@ times = np.zeros((1, num_snr))
 tmp_bers = np.zeros((1, test_iter))
 tmp_times = np.zeros((1, test_iter))
 for j in range(num_snr):
+    print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "|", 'snr=', snrdb_list[j])
     for jj in range(test_iter):
-        # print('snr:')
-        # print(snrdb_list[j])
-        # print('test iteration:')
-        # print(jj)
         batch_Y, batch_H, batch_HY, batch_HH, batch_X, SNR1 = generate_data_iid_test(test_batch_size, K, N, snr_list[j],
                                                                                      snr_list[j])
         tic = tm.time()

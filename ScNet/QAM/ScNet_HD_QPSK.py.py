@@ -52,7 +52,7 @@ snr_low = 10.0 ** (snrdb_low / 10.0)
 snr_high = 10.0 ** (snrdb_high / 10.0)
 n0 = np.expand_dims(0.5, 1)
 res_alpha = 0.9
-L = 30
+L = 90
 hl_size = 4 * K
 test_iter = 200
 test_batch_size = 1000
@@ -69,26 +69,26 @@ startingLearningRate = 0.0003
 decay_factor = 0.97
 decay_step = 1000
 
-print('DetNet QPSK')
-print(K)
-print(N)
-print(snrdb_low)
-print(snrdb_high)
-print(snr_low)
-print(snr_high)
-print(L)
-print(hl_size)
-print(startingLearningRate)
-print(decay_factor)
-print(decay_step)
-print(train_iter)
-print(train_batch_iter)
-print(test_iter)
-print(test_batch_size)
-print(res_alpha)
-print(num_snr)
-print(snrdb_low_test)
-print(snrdb_high_test)
+# print('DetNet QPSK')
+# print(K)
+# print(N)
+# print(snrdb_low)
+# print(snrdb_high)
+# print(snr_low)
+# print(snr_high)
+# print(L)
+# print(hl_size)
+# print(startingLearningRate)
+# print(decay_factor)
+# print(decay_step)
+# print(train_iter)
+# print(train_batch_iter)
+# print(test_iter)
+# print(test_batch_size)
+# print(res_alpha)
+# print(num_snr)
+# print(snrdb_low_test)
+# print(snrdb_high_test)
 
 """Data generation for train and test phases
 In this example, both functions are the same.
@@ -96,6 +96,8 @@ This duplication is in order to easily allow testing cases where the test is ove
 e.g. training over gaussian i.i.d. channels and testing over a specific constant channel.
 currently both test and train are over i.i.d gaussian channel.
 """
+nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 现在
+print("K=", K, "N=", N, "L=", L, "ScNet QPSK", "train_iter=", train_iter, "now=", nowTime)
 
 
 def generate_data_iid_test(B, K, N, snr_low, snr_high):
@@ -239,7 +241,7 @@ for i in range(1, L):
     temp1 = tf.squeeze(temp1, 1)
     Z = tf.concat([HY, S1[-1], temp1], 1)
     ZZ = relu_layer(Z, 3 * 2 * K, hl_size, 'relu' + str(i), weigth_matrix, 0)
-    S2.append(relu_layer(ZZ, hl_size, 4 * K, 'sign' + str(i), weigth_matrix, 1))
+    S2.append(sign_layer(ZZ, hl_size, 4 * K, 'sign' + str(i), weigth_matrix, 1))
     S2[i] = (1 - res_alpha) * S2[i] + res_alpha * S2[i - 1]
 
     S3 = tf.reshape(S2[i], [batch_size, K, 4])
@@ -248,15 +250,10 @@ for i in range(1, L):
     temp_2 = S3[:, :, 2]
     temp_3 = S3[:, :, 3]
 
-    S1_real = -1.0 * temp_0 + \
-              -1.0 * temp_1 + \
-              1.0 * temp_2 + \
-              1.0 * temp_3
+    S1_real = -1.0 * temp_0 + -1.0 * temp_1 + 1.0 * temp_2 + 1.0 * temp_3
 
-    S1_im = -1.0 * temp_0 + \
-            1.0 * temp_1 + \
-            -1.0 * temp_2 + \
-            1.0 * temp_3
+    S1_im = -1.0 * temp_0 + 1.0 * temp_1 + -1.0 * temp_2 + 1.0 * temp_3
+
     S1.append(tf.concat([S1_real, S1_im], 1))
     x_ind_reshaped = tf.reshape(X_IND, [batch_size, 4 * K])
     LOSS.append(np.log(i) * tf.reduce_mean(tf.reduce_mean(tf.square(x_ind_reshaped - S2[-1]), 1)))
@@ -294,9 +291,9 @@ if train_flag:
             batch_Y, batch_H, batch_HY, batch_HH, batch_X, SNR1, H_R, H_I, x_R, x_I, w_R, w_I, x_ind = generate_data_iid_test(
                 train_batch_iter, K, N, snr_low, snr_high)
             results = sess.run([LOSS[L - 1], BER[L - 1]], {HY: batch_HY, HH: batch_HH, X: batch_X, X_IND: x_ind})
-            print_string = [datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')] + [i] + results
-            print(' '.join('%s' % x for x in print_string))
-            sys.stderr.write(str(i) + ' ')
+            print_string = [i] + results
+            print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "|", ' '.join('%s' % x for x in print_string))
+            # sys.stderr.write(str(i) + ' ')
 
 # saver.restore(sess, "./DetNet_HD_QPSK/ScNetQPSK_HD_model.ckpt")
 
@@ -307,10 +304,8 @@ tmp_times = np.zeros((1, test_iter))
 tmp_ber_iter = np.zeros([L, test_iter])
 ber_iter = np.zeros([L, num_snr])
 for j in range(num_snr):
+    print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "|", 'snr=', snrdb_list[j])
     for jj in range(test_iter):
-        print('snr_num:')
-        print(j)
-        print(jj)
         batch_Y, batch_H, batch_HY, batch_HH, batch_X, SNR1, H_R, H_I, x_R, x_I, w_R, w_I, x_ind = generate_data_iid_test(
             test_batch_size, K, N, snr_list[j], snr_list[j])
         tic = tm.time()
@@ -329,4 +324,4 @@ print('bers')
 print(bers)
 print('times')
 print(times)
-save_path = saver.save(sess, "./DetNet_HD_QPSK/ScNetQPSK_HD_model.ckpt")
+# save_path = saver.save(sess, "./DetNet_HD_QPSK/ScNetQPSK_HD_model.ckpt")

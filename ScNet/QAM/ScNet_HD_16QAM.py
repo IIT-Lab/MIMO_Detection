@@ -292,6 +292,7 @@ def sign_layer(x, input_size, output_size, Layer_num, limit_mat, full_connect):
 HY = tf.placeholder(tf.float32, shape=[None, 2 * K])
 X = tf.placeholder(tf.float32, shape=[None, 2 * K])
 HH = tf.placeholder(tf.float32, shape=[None, 2 * K, 2 * K])
+# 参考信号
 X_IND = tf.placeholder(tf.float32, shape=[None, K, 16])
 
 batch_size = tf.shape(HY)[0]
@@ -305,8 +306,10 @@ for i in range(0, K):  # 遍历天线
             weigth_matrix[j * 2 * K + i, i * 16 + k] = 1
             weigth_matrix[j * 2 * K + K + i, i * 16 + k] = 1
 
+# 复数结果
 S1 = []
 S1.append(tf.zeros([batch_size, 2 * K]))
+# 向量结果
 S2 = []
 S2.append(tf.zeros([batch_size, 16 * K]))
 LOSS = []
@@ -314,7 +317,7 @@ LOSS.append(tf.zeros([]))
 BER = []
 BER.append(tf.zeros([]))
 
-# The architecture of DetNet
+# The architecture of ScNet
 for i in range(1, L):
     temp1 = tf.matmul(tf.expand_dims(S1[-1], 1), HH)
     temp1 = tf.squeeze(temp1, 1)
@@ -407,7 +410,7 @@ train_step2 = tf.train.AdamOptimizer(learning_rate2).minimize(TOTAL_LOSS)
 init_op = tf.global_variables_initializer()
 
 sess.run(init_op)
-# Training DetNet
+# Training ScNet
 for i in range(train_iter_no_noise):  # num of train iter
     batch_Y, batch_H, batch_HY, batch_HH, batch_X, SNR1, H_R, H_I, x_R, x_I, w_R, w_I, x_ind = generate_data_train(train_batch_size, K, N, snr_low, snr_high, 0)
     train_step1.run(feed_dict={HY: batch_HY, HH: batch_HH, X: batch_X, X_IND: x_ind})
