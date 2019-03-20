@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.17)  4 JUN 2018 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.17)  23 SEP 2018 18:31
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **mypaper.tex
 (./mypaper.tex
@@ -114,7 +113,37 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count93
 \@IEEEtranrubishbin=\box27
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count94
+\Gm@cntv=\count95
+\c@Gm@tempcnt=\count96
+\Gm@bindingoffset=\dimen126
+\Gm@wd@mp=\dimen127
+\Gm@odd@mp=\dimen128
+\Gm@even@mp=\dimen129
+\Gm@layoutwidth=\dimen130
+\Gm@layoutheight=\dimen131
+\Gm@layouthoffset=\dimen132
+\Gm@layoutvoffset=\dimen133
+\Gm@dimlist=\toks16
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -131,51 +160,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen126
+\@emptytoks=\toks17
+\ex@=\dimen134
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen127
+\pmbraise@=\dimen135
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count97
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count98
+\leftroot@=\count99
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count100
+\DOTSCASE@=\count101
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen128
+\big@size=\dimen136
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks16
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks17
-\eqnshift@=\dimen129
-\alignsep@=\dimen130
-\tagshift@=\dimen131
-\tagwidth@=\dimen132
-\totwidth@=\dimen133
-\lineht@=\dimen134
-\@envbody=\toks18
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks18
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks19
+\eqnshift@=\dimen137
+\alignsep@=\dimen138
+\tagshift@=\dimen139
+\tagwidth@=\dimen140
+\totwidth@=\dimen141
+\lineht@=\dimen142
+\@envbody=\toks20
 \multlinegap=\skip45
 \multlinetaggap=\skip46
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -188,15 +217,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
 \thm@preskip=\skip47
 \thm@postskip=\skip48
 \thm@headsep=\skip49
-\dth@everypar=\toks25
+\dth@everypar=\toks27
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -204,10 +233,6 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
@@ -228,23 +253,23 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count106
+\Gread@gobject=\count109
 ))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip50
 \subfigcapskip=\skip51
-\subfigcaptopadj=\dimen137
+\subfigcaptopadj=\dimen145
 \subfigbottomskip=\skip52
-\subfigcapmargin=\dimen138
+\subfigcapmargin=\dimen146
 \subfiglabelskip=\skip53
-\c@subfigure=\count107
-\c@lofdepth=\count108
-\c@subtable=\count109
-\c@lotdepth=\count110
+\c@subfigure=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@lotdepth=\count113
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -258,9 +283,9 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen139
-\extrarowheight=\dimen140
-\NC@list=\toks27
+\col@sep=\dimen147
+\extrarowheight=\dimen148
+\NC@list=\toks28
 \extratabsurround=\skip56
 \backup@length=\skip57
 )
@@ -271,82 +296,26 @@ Package: cite 2015/02/27  v 5.5
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks28
+\@enLab=\toks29
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count111
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\algocf@hangindent=\skip58
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-********************************************************
-Package `algorithm2e' Release 5.1 -- october 19 2015 --
-- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
-- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
-subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
-********************************************************
-\skiptotal=\skip59
-\skiplinenumber=\skip60
-\skiprule=\skip61
-\skiphlne=\skip62
-\skiptext=\skip63
-\skiplength=\skip64
-\algomargin=\skip65
-\skipalgocfslide=\skip66
-\algowidth=\dimen141
-\inoutsize=\dimen142
-\inoutindent=\dimen143
-\interspacetitleruled=\dimen144
-\interspacealgoruled=\dimen145
-\interspacetitleboxruled=\dimen146
-\algocf@ruledwidth=\skip67
-\algocf@inoutbox=\box30
-\algocf@inputbox=\box31
-\AlCapSkip=\skip68
-\AlCapHSkip=\skip69
-\algoskipindent=\skip70
-\algocf@nlbox=\box32
-\algocf@hangingbox=\box33
-\algocf@untilbox=\box34
-\algocf@skipuntil=\skip71
-\algocf@capbox=\box35
-\algoheightruledefault=\skip72
-\algoheightrule=\skip73
-\algotitleheightruledefault=\skip74
-\algotitleheightrule=\skip75
-\c@algocfline=\count112
-\c@algocfproc=\count113
-\c@algocf=\count114
-\algocf@algoframe=\box36
-\algocf@algobox=\box37
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip76
-\multirow@cntb=\count115
-\multirow@dima=\skip77
-\bigstrutjot=\dimen147
+\multirow@colwidth=\skip58
+\multirow@cntb=\count114
+\multirow@dima=\skip59
+\bigstrutjot=\dimen149
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks29
-\verbatim@line=\toks30
+\every@verbatim=\toks30
+\verbatim@line=\toks31
 \verbatim@in@stream=\read1
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count116
-\c@dblbotnumber=\count117
+\@dblbotnum=\count115
+\c@dblbotnumber=\count116
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -356,13 +325,13 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-\c@theorem=\count118
-\c@lemma=\count119
-\c@proposition=\count120
-\c@corollary=\count121
-\c@conjecture=\count122
-\c@definition=\count123
-\c@remark=\count124
+\c@theorem=\count117
+\c@lemma=\count118
+\c@proposition=\count119
+\c@corollary=\count120
+\c@conjecture=\count121
+\c@definition=\count122
+\c@remark=\count123
 
 (./mypaper.aux)
 \openout1 = `mypaper.aux'.
@@ -380,20 +349,54 @@ LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 
--- Lines per column: 56 (exact).
+-- Lines per column: 55 (approximate, difference = 8.4975pt).
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=668.4975pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-48.6351pt
+* \headheight=12.0pt
+* \headsep=18.56761pt
+* \topskip=12.0pt
+* \footskip=40.5821pt
+* \marginparwidth=20.0pt
+* \marginparsep=10.0pt
+* \columnsep=12.0pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen148
-\scratchbox=\box38
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen149
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count124
+\scratchdimen=\dimen150
+\scratchbox=\box30
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen151
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -401,9 +404,6 @@ Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -443,212 +443,137 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 39.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 41.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 41.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 41.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `DetNet' on page 1 undefined on input line 41.
-
-
-LaTeX Warning: Citation `MIMO1' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Citation `MIMO2' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Citation `problem' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `detector' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `ResNet' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Citation `BCH' on page 1 undefined on input line 55.
-
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-
-LaTeX Warning: Citation `feedback' on page 1 undefined on input line 55.
-
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 59.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-
-
-LaTeX Warning: Reference `Network model' on page 2 undefined on input line 97.
-
-<DetNetFormWork.pdf, id=10, 550.30594pt x 269.50688pt>
+<DetNetFormWork.pdf, id=18, 529.667pt x 258.58505pt>
 File: DetNetFormWork.pdf Graphic file (type pdf)
+ <use DetNetFormWork.pdf>
+Package pdftex.def Info: DetNetFormWork.pdf used on input line 105.
+(pdftex.def)             Requested size: 211.38832pt x 103.19939pt.
 
-<use DetNetFormWork.pdf>
-Package pdftex.def Info: DetNetFormWork.pdf used on input line 100.
-(pdftex.def)             Requested size: 258.0pt x 126.3557pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 100--101
- [][] 
- []
-
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ø in font ptmr7t!
-Missing character: There is no Ω in font ptmr7t!
-
-LaTeX Warning: Reference `DetNetTheory' on page 2 undefined on input line 123.
-
-[2 <./DetNetFormWork.pdf>]
-
-LaTeX Warning: Reference `DetNet unit' on page 3 undefined on input line 125.
-
-<DetNet.pdf, id=51, 517.18219pt x 304.13625pt>
+[2 <./DetNetFormWork.pdf>] <DetNet.pdf, id=37, 499.83289pt x 304.38617pt>
 File: DetNet.pdf Graphic file (type pdf)
- <use DetNet.pdf>
-Package pdftex.def Info: DetNet.pdf used on input line 129.
-(pdftex.def)             Requested size: 258.0pt x 151.72432pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 129--130
+<use DetNet.pdf>
+Package pdftex.def Info: DetNet.pdf used on input line 135.
+(pdftex.def)             Requested size: 234.8775pt x 143.03365pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
-
-LaTeX Warning: Citation `DetNet' on page 3 undefined on input line 150.
-
-
-LaTeX Warning: Reference `DetNet unit' on page 3 undefined on input line 154.
-
-
-LaTeX Warning: Reference `DetNetConnect' on page 3 undefined on input line 154.
-
-
-
-LaTeX Warning: Reference `DetNetConnect' on page 3 undefined on input line 154.
-
-
-<DetNetConnect.pdf, id=52, 421.575pt x 420.82219pt>
+<DetNetConnect.pdf, id=38, 410.64528pt x 418.75746pt>
 File: DetNetConnect.pdf Graphic file (type pdf)
  <use DetNetConnect.pdf>
-Package pdftex.def Info: DetNetConnect.pdf used on input line 157.
-(pdftex.def)             Requested size: 206.39685pt x 206.0313pt.
+Package pdftex.def Info: DetNetConnect.pdf used on input line 180.
+(pdftex.def)             Requested size: 187.89914pt x 191.60841pt.
 
-
-LaTeX Warning: Reference `DetNetRemoveV' on page 3 undefined on input line 161.
-
-
-<DetNetRemoveV.pdf, id=53, 408.02437pt x 420.82219pt>
+<DetNetRemoveV.pdf, id=39, 399.34406pt x 418.00465pt>
 File: DetNetRemoveV.pdf Graphic file (type pdf)
  <use DetNetRemoveV.pdf>
-Package pdftex.def Info: DetNetRemoveV.pdf used on input line 164.
-(pdftex.def)             Requested size: 206.39685pt x 212.8699pt.
+Package pdftex.def Info: DetNetRemoveV.pdf used on input line 191.
+(pdftex.def)             Requested size: 187.89914pt x 196.68544pt.
 
+[3 <./DetNet.pdf> <./DetNetConnect.pdf>]
+<vectorPlus.pdf, id=216, 298.00032pt x 217.91412pt>
+File: vectorPlus.pdf Graphic file (type pdf)
+ <use vectorPlus.pdf>
+Package pdftex.def Info: vectorPlus.pdf used on input line 202.
+(pdftex.def)             Requested size: 140.92793pt x 103.05806pt.
 
-LaTeX Warning: Reference `DetNetTheory' on page 3 undefined on input line 168.
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 168.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-LaTeX Warning: Reference `NfdNet' on page 3 undefined on input line 168.
-
-<NfdNet.pdf, id=54, 323.70938pt x 254.45062pt>
-File: NfdNet.pdf Graphic file (type pdf)
- <use NfdNet.pdf>
-Package pdftex.def Info: NfdNet.pdf used on input line 171.
-(pdftex.def)             Requested size: 154.80157pt x 121.68063pt.
- [3 <./DetNet.pdf> <./DetNetConnect.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./DetNetConnect.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./DetNetRemoveV.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./DetNetRemoveV.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]
-Package epstopdf Info: Source file: <beforeResult.eps>
-(epstopdf)                    date: 2018-04-05 22:05:30
-(epstopdf)                    size: 42916 bytes
-(epstopdf)             Output file: <beforeResult-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-05 22:05:30
-(epstopdf)                    size: 6779 bytes
-(epstopdf)             Command: <repstopdf --outfile=beforeResult-eps-converted
--to.pdf beforeResult.eps>
-(epstopdf)             \includegraphics on input line 200.
+<ScNet.pdf, id=217, 312.92308pt x 254.96053pt>
+File: ScNet.pdf Graphic file (type pdf)
+ <use ScNet.pdf>
+Package pdftex.def Info: ScNet.pdf used on input line 212.
+(pdftex.def)             Requested size: 140.92793pt x 114.82065pt.
+Package epstopdf Info: Source file: <Figcompare1.eps>
+(epstopdf)                    date: 2018-06-25 14:37:17
+(epstopdf)                    size: 37584 bytes
+(epstopdf)             Output file: <Figcompare1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-25 14:37:17
+(epstopdf)                    size: 5876 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figcompare1-eps-converted-
+to.pdf Figcompare1.eps>
+(epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
- <beforeResult-eps-converted-to.pdf, id=295, 440.64626pt x 356.33125pt>
-File: beforeResult-eps-converted-to.pdf Graphic file (type pdf)
 
-<use beforeResult-eps-converted-to.pdf>
-Package pdftex.def Info: beforeResult-eps-converted-to.pdf used on input line 2
-00.
-(pdftex.def)             Requested size: 258.0pt x 208.64052pt.
+<Figcompare1-eps-converted-to.pdf, id=218, 465.74pt x 406.51875pt>
+File: Figcompare1-eps-converted-to.pdf Graphic file (type pdf)
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 200--201
+<use Figcompare1-eps-converted-to.pdf>
+Package pdftex.def Info: Figcompare1-eps-converted-to.pdf used on input line 24
+6.
+(pdftex.def)             Requested size: 230.18253pt x 200.91414pt.
+
+Overfull \hbox (1.30502pt too wide) in paragraph at lines 246--247
  [][] 
  []
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
+[4 <./DetNetRemoveV.pdf> <./vectorPlus.pdf> <./ScNet.pdf>]
+Package epstopdf Info: Source file: <convergence.eps>
+(epstopdf)                    date: 2018-06-25 14:37:17
+(epstopdf)                    size: 63432 bytes
+(epstopdf)             Output file: <convergence-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-25 14:37:17
+(epstopdf)                    size: 16201 bytes
+(epstopdf)             Command: <repstopdf --outfile=convergence-eps-converted-
+to.pdf convergence.eps>
+(epstopdf)             \includegraphics on input line 274.
+Package epstopdf Info: Output file is already uptodate.
+
+<convergence-eps-converted-to.pdf, id=370, 465.74pt x 406.51875pt>
+File: convergence-eps-converted-to.pdf Graphic file (type pdf)
+
+<use convergence-eps-converted-to.pdf>
+Package pdftex.def Info: convergence-eps-converted-to.pdf used on input line 27
+4.
+(pdftex.def)             Requested size: 234.8775pt x 205.0081pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 274--275
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 285--286
+[]\OT1/ptm/m/n/10 This work was sup-ported by the Na-tional Nat-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 285--286
+\OT1/ptm/m/n/10 u-ral Sci-ence Foun-da-tion of China (No. 61601047,
+ []
+
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ∂ in font ptmr7t!
+[5 <./Figcompare1-eps-converted-to.pdf> <./convergence-eps-converted-to.pdf>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -660,45 +585,41 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./NfdNet.pdf> <./beforeResult-eps-converted-to.pdf>] (./mypaper.aux)
+[6
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 1061 ({)
-### bottom level 
+] (./mypaper.aux) ) 
 Here is how much of TeX's memory you used:
- 4904 strings out of 492995
- 74812 string characters out of 6132704
- 155942 words of memory out of 5000000
- 8346 multiletter control sequences out of 15000+600000
- 42779 words of font info for 83 fonts, out of 8000000 for 9000
+ 4458 strings out of 492995
+ 67001 string characters out of 6132704
+ 143339 words of memory out of 5000000
+ 7892 multiletter control sequences out of 15000+600000
+ 51046 words of font info for 112 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,20n,25p,1234b,2104s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on mypaper.pdf (4 pages, 324147 bytes).
+ 39i,20n,25p,1596b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on mypaper.pdf (6 pages, 796025 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
+ 445 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

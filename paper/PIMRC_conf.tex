@@ -1,5 +1,8 @@
+
 \documentclass[conference]{IEEEtran}
-\usepackage[letterpaper, left=1in, right=1in, bottom=1in, top=0.75in]{geometry}
+
+
+\usepackage[letterpaper, left=1.01in, right=1.01in, bottom=1in, top=0.75in]{geometry}
 
 \usepackage{setspace}
 \usepackage{mathrsfs}
@@ -17,17 +20,9 @@
 \usepackage{verbatim}
 \usepackage{stfloats}
 \usepackage{color}
-\newtheorem{theorem}{\bf{Theorem}}
-\newtheorem{lemma}{\bf{Lemma}}
-\newtheorem{proposition}{\bf{Proposition}}
-\newtheorem{corollary}{\bf{Corollary}}
-\newtheorem{conjecture}{\bf{Conjecture}}
-\newtheorem{definition}{\bf{Definition}}
-\newtheorem{remark}{\bf{Remark}}
-
-\hyphenation{location-based}
 
 \begin{document}
+
 \title{Sparsely Connected Neural Network for Massive MIMO Detection}
 
 \author{\IEEEauthorblockN{Guili Gao$^{1,2}$, Chao Dong$^{1,2}$, Kai Niu$^1$}
@@ -38,30 +33,31 @@ $^{2}$Science and Technology on Communication Networks Laboratory\\
 Email: \{2016140061, dongchao, niukai\}@bupt.edu.cn}
 }
 
+% make the title area
 \maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
 \begin{abstract}
 Deeping learning can achieve high parallelism and robustness, which is especially suitable for massive multiple-input multiple-output (MIMO) detection. There are already some well-developed deep learning models applied to MIMO detection, in which detection network is a typical representative model with excellent performance, but its complexity is high. This paper aims to simplify the detection network model, and the simplification runs through the entire data processing. This simplification includes three improvements. First, the number of inputs is reduced to simplify inputs; Second, the network connection structure is simplified by changing network from full connectivity to sparsely connectivity and reducing the number of network layers by half. Third, the loss function optimizes to avoid irreversible problems with the matrix. Base on the above improvements, the complexity of the network is reduced from ${\mathcal{O}(64n^2)}$ to ${\mathcal{O}(3n)}$. The simulation results indicates that the proposed structure has better performance than the existing detection network.
 \end{abstract}
 
-
-
-% \begin{IEEEkeywords}
-% Deep Learning, MIMO Detection, Simplify Detection Network
-% \end{IEEEkeywords}
-
 \IEEEpeerreviewmaketitle
 
+
+
 \section{Introduction}
-Multiple-input multiple-output (MIMO) technology can improve spectrum efficiency and has been applied in many wireless communication standards, such as WiMax and LTE \cite{LTE}\cite{MIMO1}. Basically, the more antennas the transmitter/receiver is equipped with, the more possible signal paths and the better the performance in terms of data rate and link reliability. In future 5G development, massive MIMO is considered as a key technique with number of transmission and receiving antennas. It is getting great attention for need of high communication data rate, however, most of the MIMO used today is ${4 \times 4}$ or ${8 \times 8}$. One of the reasons is that with the number of antennas increasing, the complexity becomes large, which is one of the key factors that restrict the number of antennas. So the key issue in using the massive MIMO is to reduce the detection complexity. The optimal detection scheme is the maximum likelihood (ML) detection, but it has the highest computational complexity. To reduce computational complexity, the linear detector is proposed, such as the minimum mean squared error (MMSE) and zero-forcing (ZF)\cite{MIMO2} detectors. But the performance of linear detection is poor. There are other suboptimal algorithms, including approximate message passing (AMP)\cite{AMP}, semidefinite relaxation (SDR)\cite{SDR}, \cite{detector} and fixed-complexity sphere decoder (FSD)\cite{FSD}. There are many simplifying algorithms, but as the number of antennas increases, their complexity becomes intolerable and performance deteriorates.
+% no \IEEEPARstart
+Multiple-input multiple-output (MIMO) technology can improve spectrum efficiency and has been applied in many wireless communication standards, such as WiMax and LTE \cite{LTE}\cite{MIMO1}. Basically, the more antennas the transmitter/receiver is equipped with, the more possible signal paths and the better the performance in terms of data rate and link reliability. In future 5G development, massive MIMO is considered as a key technique with number of transmission and receiving antennas. It is getting great attention for need of high communication data rate, however, most of the MIMO used today is ${4 \times 4}$ or ${8 \times 8}$. One of the reasons is that with the number of antennas increase, the complexity becomes large, which is one of the key factors that restrict the number of antennas. So the key issue in using the massive MIMO is to reduce the detection complexity. The optimal detection scheme is the maximum likelihood (ML) detection, but it has the highest computational complexity. To reduce computational complexity, the linear detector is proposed, such as the minimum mean squared error (MMSE) and zero-forcing (ZF)\cite{MIMO2} detectors. But the performance of linear detection is poor. There are other suboptimal algorithms, including approximate message passing (AMP)\cite{AMP}, semidefinite relaxation (SDR)\cite{SDR}, \cite{detector} and fixed-complexity sphere decoder (FSD)\cite{FSD}. There are many simplifying algorithms, but as the number of antennas increases, their complexity becomes intolerable and performance deteriorates.
 
-In the past few years, machine learning has achieved a great success in many fields. There are many models in the field of machine learning, such as Support Vector Machine (SVM), XGBoost\cite{XGBoost}, Decision Tree and Neural Networks. The rapidest development in recent years is the deep learning, especially in image processing and artificial intelligence. Deep learning is a multi-layer neural network constructed by complex connections, and the network structure is adjusted according to different application scenarios. The use of neural networks consists of two phases, training phase and application phase. During the training phase, pre-marked data are inputed into the network to adjust the network connection weights. The most commonly used network weight adjustment algorithm is the gradient descent method. But with the increase of network layer, the training time will increase, and the gradient will radiate or disappear\cite{normalization}. Residual neural network (ResNet)\cite{ResNet} can increase the depth of the network, speed up convergence, improve the performance of the network, and avoid problems such as the radiation or the disappearing caused by too much network layers. ResNet is referenced in the network structure of this paper.
+In the past few years, machine learning has achieved a great success in many fields. There are many models in the field of machine learning, such as Support Vector Machine (SVM), XGBoost\cite{XGBoost}, Decision Tree and Neural Networks. The rapidest development in recent years is the deep learning, especially in image processing and artificial intelligence. Deep learning is a multi-layer neural network constructed by complex connections, and the network structure is adjusted according to different application scenarios. The use of neural networks consists of two phases, training phase and application phase. During the training phase, pre-marked data are inputed into the network to adjust the network connection weights. The most commonly used network weight adjustment algorithm is the gradient descent method. But with the increase of network layer, the training time will increase, and the gradient will radiate or disappear\cite{normalization}. Residual neural network (ResNet)\cite{ResNet} can increase the depth of the network, speed up convergence, improve the performance of the network, and avoid problems such as the radiation or the disappearing caused by too much network layer. ResNet is referenced in the network structure of this paper.
 
-Detection network (DetNet\cite{DetNet}) is a multilayer deep neural network for massive MIMO detection. The performance of DetNet is much better than that of MMSE and ZF, especially when the number of antennas increases, it can approach the performance of AMP algorithm. The process of DetNet contains two phases. the training phase and the detection phase. During training, base on the number of antennas and receiving antennas, and the number of nodes in the network is determined; Each batch of training data run though different fast fading channels and different signal-to-noise ratio (SNR). The receiver will input the receiving signals into the network for training. The convergence of training parameters is guaranteed by backward propagation algorithm. In detection phase, cause the network has been trained, it can be applied to different fast fading channels with different SNRs. The followings are the advantages and disadvantages of DetNet.
+Detection network (DetNet)\cite{DetNet} is a multilayer deep neural network for massive MIMO detection. The performance of DetNet is much better than that of MMSE and ZF, especially when the number of antennas increases, it can approach the performance of AMP algorithm. The process of DetNet contains two phases. the training phase and the detection phase. During training, base on the number of antennas and receiving antennas, and the number of nodes in the network is determined; Each batch of training data run though different fast fading channels and different signal-to-noise ratio (SNR). The receiver will input the receiving signals into the network for training. The convergence of training parameters is guaranteed by backward propagation algorithm. In detection phase, the network has been trained, the weights of network are fixed, and they can be applied to different fast fading channels and different SNRs. The following are the advantages and disadvantages of DetNet.
 \begin{itemize}
 \item Advantage:
     \begin{enumerate}
         \item  The performance of DetNet is similar to the performance of suboptimal algorithm, and with the increase of the number of antennas, the performance is better.
-        \item  DetNet has good robustness, once trained, they can adapt to different SNRs and different channels.
+        \item  DetNet has good robustness, once trained, they can adapt to different SNR and different channels.
         \item  The structure of DetNet can be processed in parallel, especially when the current computing chip is providing better support for the parallel computing.
     \end{enumerate}
 \item Disadvantages:
@@ -75,20 +71,22 @@ Detection network (DetNet\cite{DetNet}) is a multilayer deep neural network for 
 
 In this paper, we define the channel matrix as \textbf{H}, the transmit vector as \textbf{x}, and the receive vector as \textbf{y}, Boldface uppercase letters denote matrices, Boldface lowercase letters denote vectors, the superscript ${(\centerdot)^T}$ denotes the transpose.
 
+
 \section{System Model}
 In this section, we first introduce the traditional MIMO detection algorithm, then explain the design idea of the DetNet, and finally introduce the parameters of the DetNet network in detail.
 
 \subsection{MIMO Detection}
-For a MIMO system, we consider an end-to-end communication system which contains ${n}$ transmit antennas, ${m}$ receiving antennas, where ${n < m}$. The communication model can be described as follows:
+
+For a MIMO system, we consider an end-to-end communication system which contains ${n}$ transmit antennas, ${m}$ receiving antennas, where ${n \textless m}$. The real part is considered, and the imaginary part is ignored. The communication model can be described as follows:
 
 \begin{equation}
 \label{basic model}
-\textbf{y}=\textbf{Hx}+\textbf{w}
+\textbf{y}=\textbf{Hx}+\textbf{n}
 \end{equation}
 
-Where \textbf{y} is a real vector of ${m \times 1}$ dimensions, \textbf{x} is a real vector of ${n \times 1}$ dimensions, \textbf{w} is a real vector of ${m \times 1}$ dimensions, representing the additive white gaussian noise (AWGN) of with independent and identically distributed (i.i.d.), each with zero-mean and variance ${{\delta}^2}$, \textbf{H} is ${m \times n}$ matrix, which represents the channel state information (CSI) that is supposed known perfectly on this model.
+Where \textbf{y} is a real vector of ${m \times 1}$ dimensions, \textbf{x} is a real vector of ${n \times 1}$ dimensions, \textbf{n} is a real vector of ${m \times 1}$ dimensions representing the additive white gaussian noise (AWGN) of with independent and identically distributed (i.i.d.), each with zero-mean and variance ${{\delta}^2}$, \textbf{H} is ${m \times n}$ matrix, which represents the channel state information (CSI) that is supposed known perfectly.
 
-The goal of MIMO detection is to detect the transmission signals according to the signals received by the receiving antennas. The best algorithm is ML detection. According to ML, all possible transmission siginals are sent over the known channel, and the detection result is the estimate of the transmitted signals which is nearest to sending siginals based on Euclidean distance. Since ML searches all the possible signals, the complexity of ML detection increases exponentially as the number of antennas and the modulation order increase. That is the reason why the ML detection is rarely used in practical MIMO detection. The formula (\ref{ML}) is the basic model of ML detection.
+The goal of MIMO detection is to detecte the transmission signals according to the signals received by the receiving antennas. The best algorithm is ML detection. According to ML, all possible transmission siginals are sent over the known channel, and the detection result is the transmission signals with the output signals which is nearest to receiving siginals based on Euclidean distance. Because ML searches all the possible signals, the complexity of ML detection increases exponentially as the number of antennas and the modulation order increase. This is impractical for massive MIMO detection and the reason why the ML detection is rarely used in practical MIMO detection. The formula (\ref{ML}) is the procedure of ML detection.
 
 \begin{equation}
 \label{ML}
@@ -98,7 +96,7 @@ The goal of MIMO detection is to detect the transmission signals according to th
 Although ML detection is hard to be realized in the project, it has an enlightening effect on other detection algorithms. Many  algorithms are derived from ML, DetNet is one of them.
 
 \subsection{DetNet}
-DetNet was proposed in "Deep MIMO detection"\cite{DetNet}, it is a multi-layer neural network dedicated to MIMO detection, the overall structure of the network is as Fig.\ref{Network model}.
+DetNet was proposed in "Deep MIMO detection", it is a multi-layer neural network dedicated to MIMO detection, the overall structure of the network is as Fig.\ref{Network model}.
 
 \begin{figure}[ht]
   \centering
@@ -127,41 +125,39 @@ $\mu$ is a residual coefficient. DetNet is an iterative network, the output of e
 \end{split}
 \end{equation}
 
-${\textbf{x}_{\textrm{in}}^l}$ is the estimated signal of unit ${l-1}$ and $\lambda_l$ is the stepping parameter. ${\prod}$ is a interative structure. ${\textbf{x}}$ init with a random vector, as the structure unit deepens, the vector becomes closer to the ideal vector. After one iteration, the structure performance will improve by the gradient descent algorithm and the backward propagation algorithm of the neural network. The output ${\textbf{x}_{\textrm{out}}^l}$ of each unit is gradually approaching the sending signal \textbf{x}. It is showed in formula (\ref{DetNetTheory}) that the performance of the network is just related to \textbf{Hy} and ${\textbf{H}^T\textbf{Hx}}$, so DetNet use them as inputs of the network. DetNet also adds an input vector \textbf{v} to each unit to expand the input dimension, which is similar to the offset of the input vector. The parameters of each unit is listed in Fig.\ref{DetNet unit}\cite{DetNet}.
-%Table.\ref{unit}.
+${\textbf{x}_{\textrm{in}}^l}$ is the estimated signal of unit ${l-1}$ and $\lambda_l$ is the stepping parameter. ${\prod}$ is a interative structure. ${\textrm{x}}$ init with a random vector, as the structure unit deepens, the vector becomes closer to the ideal vector. After one iteration, the structure performance will improve by the gradient descent algorithm and the backward propagation algorithm of the neural network. The output ${\textbf{x}_{\textrm{out}}^l}$ of each unit is gradually approaching the sending signal \textbf{x}. It is showed in formula (\ref{DetNetTheory}) that the performance of the network is just related to \textbf{Hy} and ${\textbf{H}^T\textbf{Hx}}$, so DetNet use them as inputs of the network. DetNet also adds an input vector \textbf{v} to each unit to expand the input dimension, which is similar to the offset of the input vector. The parameters of each unit is listed in Table.\ref{unit}.
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.5\textwidth]{DetNet.pdf}
-  \caption{Network Structure of Each Unit}
-  \label{DetNet unit}
-\end{figure}
-
-
-% \begin{table}[!htbp]
-% \centering
-% \caption{Network Structure of Each Unit}
-% \label{unit}
-% \begin{tabular}{|c|c|c|c|}
-% \hline
-% input & CONCAT & hidelayer  & output \\
-% \hline
-% ${\textbf{H}^{T}\textbf{y}}$ & \multirow{4}{*}{${5n \times 1}$} & \multirow{4}{*}{${13n \times 1}$} & \multirow{2}{*}{${\textbf{v}_\textrm{out}^l }$}  \\
-
-% \cline{1-1} ${\textbf{v}_{\textrm{in}}^l}$ & & & \\
-% \cline{1-1} \cline{4-4} ${\textbf{x}_\textrm{in}^l}$ & & &\multirow{2}{*}{${\textbf{x}_\textrm{out}^l }$} \\
-% \cline{1-1} ${\textbf{H}^{T}\textbf{H}\textbf{x}}$ & & & \\
-% \hline
-% \end{tabular}
-% \end{table}
+% \begin{figure}[ht]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{DetNet.pdf}
+%   \caption{Network Structure of Each Unit}
+%   \label{DetNet unit}
+% \end{figure}
 
 
+\begin{table}[!htbp]
+\centering
+\caption{Network Structure of Each Unit}
+\label{unit}
+\begin{tabular}{|c|c|c|c|}
+\hline
+input & CONCAT & hidelayer  & output \\
+\hline
+${\textbf{H}^{T}\textbf{y}}$ & \multirow{4}{*}{${5n \times 1}$} & \multirow{4}{*}{${13n \times 1}$} & \multirow{2}{*}{${\textbf{v}_\textrm{out}^l }$}  \\
+
+\cline{1-1} ${\textbf{v}_{\textrm{in}}^l}$ & & & \\
+\cline{1-1} \cline{4-4} ${\textbf{x}_\textrm{in}^l}$ & & &\multirow{2}{*}{${\textbf{x}_\textrm{out}^l }$} \\
+\cline{1-1} ${\textbf{H}^{T}\textbf{H}\textbf{x}}$ & & & \\
+\hline
+\end{tabular}
+\end{table}
 
 The dimension of ${\textbf{H}^T\textbf{y}}$ is ${n \times 1}$, the dimension of \textbf{v} is ${2n \times 1}$, the dimension of \textbf{x} is ${n \times 1}$, the dimension of ${\textbf{H}^T\textbf{H}}$ is ${n \times n}$. CONCAT is used to connect all the input vectors and transform them into a one-dimensional vector, the dimension of the output vector from CONCAT is ${5n \times 1}$. Then the output is transmitted through a full-connected network with a large number of nodes to map the output to a higher dimension. $\rho$ is sigmod function as activation function. Because each unit needs to be iterated, the final output of each unit should have the same dimension as the input \textbf{x} and \textbf{v}. So the output of $\rho$ is as the input to a layer of network for being compresssed to \textbf{v} and \textbf{x} dimensions. Since the final \textbf{x}${\in\{\pm1\}^K}$, the activation function used is similar to function $tanh$ whose range is (-1,1).
 
 The loss function of the network is as follows:
 
 \begin{equation}
+\label{lossFunction}
 Loss=\sum_{l=1}^L\log\left(l\right)\frac{\|\textbf{x}-\hat{\textbf{x}}_l\|^2}{\|\textbf{x}-\widetilde{\textbf{x}}\|^2}
 \end{equation}
 where:
@@ -171,7 +167,10 @@ where:
 \end{equation*}
 $L$ is the total number of units. ${\hat{\textbf{x}}_l}$ is the unit $l$'s estimate of the transmitted vector.
 
+
+
 \section{Improved DetNet}
+
 Although DetNet is a good-performance MIMO detection neural network model, we still find there is room for improvements. In this section, we simplify the network. The simplifed network is a sparsely connected neural network called ScNet.
 
 We take ${2 \times 2}$ MIMO structure as an example, and expand the network in Fig.\ref{DetNet unit} into the form of nodes, as in Fig.\ref{DetNetConnect}. Each node in Fig.\ref{DetNetConnect} represents one of the elements of vector.
@@ -243,7 +242,7 @@ In this section, inspired by DetNet, we propose a simplified deep learning model
 In this section, we compared the performance of DetNet and ScNet, the simulation conditions are as follows: all simulation channels is given fast fading channels, and the SNR of each simulation is randomly chosen in the range of [7, 14].
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.49\textwidth]{Figcompare1.eps}
+  \includegraphics[width=0.48\textwidth]{Figcompare1.pdf}
   \caption{Comparing the Performance of DetNet and ScNet}
   \label{PerformanceCompare}
 \end{figure}
@@ -271,7 +270,7 @@ Fig.\ref{PerformanceCompare} is a performance diagram comparing the two nets, it
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{convergence.eps}
+  \includegraphics[width=0.48\textwidth]{convergence.pdf}
   \caption{Network Convergence Speed}
   \label{Convergence}
 \end{figure}
@@ -281,11 +280,14 @@ Fig.\ref{Convergence} shows the convergence speeds of the two network trainings.
 \section{Conclusions and Future Work}
 In this paper, an improved deep learning model is proposed for detection in large-scale MIMOs, based on the analysis of DetNet model. Numerical analysis indicates that ScNet not only simplifies the complexity, but also improves the performance, especially when sending and receiving end equipped with large scale antenna.
 
-\section{Acknowledgements}
+\section*{Acknowledgment}
 This work was supported by the National Natural Science Foundation of China (No. 61601047, 61671080, 61771066),  and Science and Technology on Communication Networks Laboratory Open Project (KX172600028).
 
 
-\begin{thebibliography}{99}
+
+
+\begin{thebibliography}{1}
+
 \bibitem{LTE}
 E. Dahlman, S. Parkvall, J. Sköld, P. Beming, "3G Evolution HSPA and LTE for Mobile Broadband". Academic, 2008.
 
@@ -313,14 +315,27 @@ T. Chen and C. Guestrin. "Xgboost: A scalable tree boosting system". CoRR, abs/1
 \bibitem{normalization}
 S. Ioffe and C. Szegedy. "Batch normalization: Accelerating deep network training by reducing internal covariate shift". arXiv:1502.03167, 2015
 
+% \bibitem{sum-product}
+% F. R. Kschischang, B. J. Frey and H. A. Loeliger, "Factor graphs and the sum-product algorithm", in IEEE Transactions on Information Theory, vol. 47, no. 2, pp. 498-519, Feb 2001.
+
 \bibitem{ResNet}
 K. He X. Zhang S. Ren J. Sun "Deep Residual Learning for Image Recognition", in \emph{Computer Vision and Pattern Recognition IEEE} pp. 770-778 2016.
+
 
 \bibitem{DetNet}
 N. Samuel, T. Diskin and A. Wiesel, "Deep MIMO detection" \emph{2017 IEEE 18th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)}, Sapporo, 2017, pp. 1-5. doi: 10.1109/SPAWC.2017.8227772
 
 
 
+
+
+
 \end{thebibliography}
 
+
+
+
+% that's all folks
 \end{document}
+
+
